@@ -10,13 +10,14 @@ app.config["MONGO_URI"] = "mongodb://admin:7hayfield@ds135776.mlab.com:35776/coo
 mongo = PyMongo(app)
 
 @app.route('/')
+@app.route('/add_recipe')
+def add_recipe():
+    return render_template("add_recipe.html", categories=mongo.db.categories.find())
+
 @app.route('/get_recipe')
 def get_recipe():
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
-    
-@app.route('/add_recipe')
-def add_recipe():
-    return render_template("add_recipe.html")
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
