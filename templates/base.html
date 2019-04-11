@@ -3,6 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="/vendors/formvalidation/dist/css/formValidation.min.css">
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
 
     <title>Cook Book</title>
@@ -13,13 +14,18 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    
+    <script src="/vendors/formvalidation/dist/js/FormValidation.min.js"></script>
     <script>
+    
+    //For category dropdown functionality//
     
         $(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
         });
+        
+    //jQuery used for datepicker functionality//    
+    
        $('.datepicker').pickadate({
             selectMonths: true, // Creates a dropdown to control month
             selectYears: 15, // Creates a dropdown of 15 years to control year,
@@ -29,6 +35,20 @@
             closeOnSelect: false // Close upon selecting a date,
         });
         
+        
+    //Plugin used for form validation to make sure all areas are filled in//    
+        
+        $(document).ready(function() {
+        $('select').material_select();
+    
+        // for HTML5 "required" attribute
+        $("select[required]").css({
+          display: "inline",
+          height: 0,
+          padding: 0,
+          width: 0
+        });
+      });
         
 
     </script>

@@ -6,7 +6,7 @@
             <div class="row">
               <div class="input-field col s12">
                   <i class="material-icons prefix">poll</i>
-                <select class="category" name="category_name">
+                <select class="category" name="category_name" required="" aria-required="true">
                   <option value="" disabled selected>Choose a Category</option>
                   {% for category in categories%}
                   <option value="{{category.category_name}}">{{category.category_name}}</option>
