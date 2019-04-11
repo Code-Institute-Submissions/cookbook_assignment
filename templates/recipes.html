@@ -6,14 +6,17 @@
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
             {% for recipe in recipes %}
-          <span class="card-title"> {{recipe.category_name}} - {{recipe.recipe_name}} by {{recipe.recipe_author}}</span> 
-          <p>Cuisine: {{recipe.cuisine}}</p>
-          <p>Prep-Time: {{recipe.Prep_time}}</p> 
-          <p>Cooking-Time: {{recipe.cooking_time}}</p>
+          <span class="card-title"><strong>{{recipe.recipe_name}}</strong> by <strong>{{recipe.recipe_author}}</strong></span> 
+          <hr>
+          <p>{{recipe.recipe_description}}</p>
+          <hr>
+          <p><strong>Cuisine: </strong>{{recipe.cuisine}}</p>
+          <p><strong>Preparation Time: </strong>{{recipe.Prep_time}}</p> 
+          <p><strong>Cooking Time: </strong>{{recipe.cooking_time}}</p>
           
         </div>
         <div class="card-action">
-          <a href="#">Click Here The Full Recipe Here!</a>
+          <a href="#"><i class="material-icons">restaurant_menu</i> Click Here For The Full Recipe Here!</a>
           {% endfor %}
         </div>
       </div>

@@ -16,3 +16,5 @@ http://www.youtube.com/user/c9ide.
 
 Happy coding!
 The Cloud9 IDE team
+
+{% for recipe in recipes %} {{recipe.category_name}} {{recipe.recipe_name}} {{recipe.Ingredients}} {{recipe.Prep_time}} {{recipe.cooking_time}} {{recipe.Instructions}} {{recipe.recipe_author}} {{recipe.calories}} {{recipe.vegan}} {{recipe.gluten_free}} {{recipe.allergens}} {% endfor %}
