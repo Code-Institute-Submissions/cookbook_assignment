@@ -24,7 +24,15 @@ def insert_recipe():
 @app.route('/get_recipe')
 def get_recipe():
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
-
+    
+@app.route('/edit_recipe')
+def edit_recipe(recipe_id):
+    the_recipe=mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    all_categories= mongo.db.cateogories.find()
+    return render_template("edit_recipe.html", recipe=the_recipe, categories=all_categories)
+    
+    
+    
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
