@@ -43,11 +43,14 @@ def update_recipe(recipe_id):
         'date':request.form.get('date'),
         'gluten_free':request.form.get('gluten_free'),
     })
-    
     return redirect(url_for('get_recipe'))
     
+@app.route('/delete_recipe/<recipe_id>')
+def delete_recipe(recipe_id):
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    return redirect(url_for('get_recipe'))
+
 if __name__ == '__main__':
-    app.secret_key = 'mysecret'
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
             debug=True)
