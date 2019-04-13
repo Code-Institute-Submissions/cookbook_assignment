@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h2 class="heading">Choose a Cuisine!</h2>
+    <div class="col s4 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{url_for('static', filename='images/breakfast1.jpg')}}" height="420">
+        </div>
+        <div class="card-content">
+          <p>Something to grab on the go or Breakfast in Bed?</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  
+  <div class="col s4 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{url_for('static', filename='images/lunch3.jpg')}}" height="420">
+        </div>
+        <div class="card-content">
+          <p>Something to grab on the go or Breakfast in Bed?</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    
+     <div class="col s4 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{url_for('static', filename='images/curry.jpg')}}">
+        </div>
+        <div class="card-content">
+          <p>Something to grab on the go or Breakfast in Bed?</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+
+    
+</div>
+
+{% endblock %}
