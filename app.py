@@ -11,6 +11,14 @@ app.config["MONGO_URI"] = "mongodb://admin:7hayfield@ds135776.mlab.com:35776/coo
 mongo = PyMongo(app)
 
 @app.route('/')
+
+@app.route('/user')
+def user():
+    return render_template('login.html')
+
+
+
+
 @app.route('/add_recipe')
 def add_recipe():
     return render_template("add_recipe.html", categories=mongo.db.categories.find())
@@ -54,7 +62,6 @@ def update_recipe(recipe_id):
         'cuisine':request.form.get('cuisine'),
         'calories':request.form.get('calories'),
         'allergens':request.form.get('allergens'),
-        'date':request.form.get('date'),
         'gluten_free':request.form.get('gluten_free'),
     })
     return redirect(url_for('get_recipe'))
