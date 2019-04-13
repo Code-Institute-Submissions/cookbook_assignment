@@ -31,14 +31,17 @@ def user_info():
 def login():
     users = mongo.db.users
     client = users.find_one({'username' : request.form['username']})
-    
+
     if client:
         session['username'] = request.form['username']
         return redirect(url_for('get_recipe'))
-    else:
-        return "Not a valid username."
+    else:    
+        return  "not a valid username"
 
-
+@app.route('/logout', methods=['GET','POST'])
+def logout():
+    session.pop('username')
+    return redirect(url_for('get_recipe'))
 
 @app.route('/add_recipe')
 def add_recipe():
@@ -99,6 +102,7 @@ def view_recipe(recipe_id):
     return render_template('view_recipe.html', recipe=the_recipe, categories=all_categories)   
 
 if __name__ == '__main__':
+    app.secret_key = 'mysecret'
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
             debug=True)
