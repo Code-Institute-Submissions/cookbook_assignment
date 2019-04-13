@@ -40,6 +40,20 @@ def update_recipe(recipe_id):
         'category_name':request.form.get('category_name'),
         'recipe_name':request.form.get('recipe_name'),
         'recipe_author':request.form.get('recipe_author'),
+        'description':request.form.get('description'),
+        'ingredient1':request.form.get('ingredient1'),
+        'ingredient2':request.form.get('ingredient2'),
+        'ingredient3':request.form.get('ingredient3'),
+        'ingredient4':request.form.get('ingredient4'),
+        'instruction1':request.form.get('instruction1'),
+        'instruction2':request.form.get('instruction2'),
+        'instruction3':request.form.get('instruction3'),
+        'instruction4':request.form.get('instruction4'),
+        'prep_time':request.form.get('prep_time'),
+        'cooking_time':request.form.get('cooking_time'),
+        'cuisine':request.form.get('cuisine'),
+        'calories':request.form.get('calories'),
+        'allergens':request.form.get('allergens'),
         'date':request.form.get('date'),
         'gluten_free':request.form.get('gluten_free'),
     })
@@ -49,13 +63,12 @@ def update_recipe(recipe_id):
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     return redirect(url_for('get_recipe'))
-    
-@app.route('/view_recipe/<recipe_id>')  
+
+@app.route('/view_recipe/<recipe_id>')
 def view_recipe(recipe_id):
-    the_recipe = mongo.db.recipes.find_one({"_id":ObjectId(recipe_id)})
+    the_recipe =  mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
-    return render_template("view_recipe.html", recipe=the_recipe, categories=all_categories)
-    
+    return render_template('view_recipe.html', recipe=the_recipe, categories=all_categories)   
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

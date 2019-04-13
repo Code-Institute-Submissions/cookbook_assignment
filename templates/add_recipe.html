@@ -1,7 +1,9 @@
 {% extends 'base.html' %} 
 {% block content %} 
+
 <div class="container">
     <div class="row">
+        <h2>Add a Recipe</h2>
     <form action=" {{url_for('insert_recipe')}} " method="POST" class="col s12">
             <div class="row">
                 <div class="input-field col s12">
@@ -22,12 +24,107 @@
           <input id="recipe_name" name="recipe_name" type="text" class="validate" required="" aria-required="true">
           <label for="icon_prefix">Recipe Name</label>
         </div>
-      </div class="row">
+      </div>
       <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">account_circle</i>
           <input id="recipe_author" name="recipe_author" type="tel" class="validate" required="" aria-required="true">
           <label for="icon_telephone">Author</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="description" name="description" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Brief Description of Recipe</label>
+        </div>
+      </div>
+      <h4>Please Add Neccessary Ingredients:</h4>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="ingredient1" name="ingredient1" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Ingredients</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="ingredient2" name="ingredient2" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Ingredients</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="ingredient3" name="ingredient3" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Ingredients</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="ingredient4" name="ingredient4" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Ingredients</label>
+        </div>
+      </div>
+      <h4>Please Provide Recipe Instructions:</h4>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="instruction1" name="instruction1" type="text" class="validate" required="" aria-required="true" value"1">
+          <label for="icon_prefix">Instructions</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="instruction2" name="instruction2" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Instructions</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="instruction3" name="instruction3" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Instructions</label>
+        </div>
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="instruction4" name="instruction4" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Instructions</label>
+        </div>
+      </div>
+      <h4>Please Provide Timings Below:</h4>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="prep_time" name="prep_time" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Preparation Time</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="cooking_time" name="cooking_time" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Cooking Time</label>
+        </div>
+      </div>
+      <h4>Please Give Details of Your Recipe Below:</h4>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="cuisine" name="cuisine" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Cuisine Style</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="calories" name="calories" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Number of Calories</label>
         </div>
       </div>
         <div class="row">
@@ -37,6 +134,13 @@
                 <label for="icon_prefix">Date of Submission</label>
             </div>
         </div>
+        <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">mode_edit</i>
+          <input id="allergens" name="allergens" type="text" class="validate" required="" aria-required="true">
+          <label for="icon_prefix">Allergens</label>
+        </div>
+      </div>
         <div class="row">
             <div class="switch">
                <label>
@@ -58,6 +162,5 @@
   </div>
     
 </div>
-
 
 {% endblock %}
