@@ -10,10 +10,10 @@
 <body class=""></body>
     <nav class="nav indigo lighten-3">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo" style="margin-left:10px">CookBook</a>
+      <a href="{{url_for('homepage')}}" class="brand-logo" style="margin-left:10px">CookBook</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           {% if session['username'] %}
-            <li>{{session['username']}}</li>
+            <li><a href="{{url_for('homepage')}}">{{session['username']}}</a></li>
             <li><a href="{{url_for('add_recipe')}}">Add A Recipe!</a></li>
             <li><a href="{{url_for('get_recipe')}}">Recipes</a></li>
             <li><a href="{{url_for('logout')}}">Log Out</a></li>

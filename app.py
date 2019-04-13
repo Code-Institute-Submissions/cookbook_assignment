@@ -21,6 +21,16 @@ def breakfast():
     return render_template('breakfast.html',
     recipes = mongo.db.recipes.find())
 
+@app.route('/lunch')    
+def lunch():
+    return render_template('lunch.html',
+    recipes = mongo.db.recipes.find())  
+    
+@app.route('/dinner')    
+def dinner():
+    return render_template('dinner.html',
+    recipes = mongo.db.recipes.find())     
+
 @app.route('/user')
 def user():
     return render_template('login.html')
