@@ -53,14 +53,14 @@ def login():
 
     if client:
         session['username'] = request.form['username']
-        return redirect(url_for('get_recipe'))
+        return redirect(url_for('homepage'))
     else:    
         return  "not a valid username"
 
 @app.route('/logout', methods=['GET','POST'])
 def logout():
     session.pop('username')
-    return redirect(url_for('get_recipe'))
+    return redirect(url_for('homepage'))
 
 @app.route('/add_recipe')
 def add_recipe():
