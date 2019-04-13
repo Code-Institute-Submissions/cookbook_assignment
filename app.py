@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, redirect, request, session, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -20,6 +20,23 @@ def user():
 def register():
     return render_template('register.html',
     users=mongo.db.users.find())
+
+@app.route('/user_info', methods=['POST'])
+def user_info():
+    users = mongo.db.users
+    users.insert_one(request.form.to_dict())
+    return redirect(url_for('user'))
+    
+@app.route('/login', methods=["GET","POST"])
+def login():
+    users = mongo.db.users
+    client = users.find_one({'username' : request.form['username']})
+    
+    if client:
+        session['username'] = request.form['username']
+        return redirect(url_for('get_recipe'))
+    else:
+        return "Not a valid username."
 
 
 
