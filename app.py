@@ -82,7 +82,8 @@ def get_recipe():
 def edit_recipe(recipe_id):
     the_recipe = mongo.db.recipes.find_one({"_id":ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edit_recipe.html', recipe=the_recipe, categories=all_categories)
+    all_cuisine = mongo.db.origin_of_cuisine.find()
+    return render_template('edit_recipe.html', recipe=the_recipe, categories=all_categories, cuisines=all_cuisine)
     
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 def update_recipe(recipe_id):
@@ -90,6 +91,7 @@ def update_recipe(recipe_id):
     recipes.update( {"_id": ObjectId(recipe_id)},
     {
         'category_name':request.form.get('category_name'),
+        'cuisine_name':request.form.get('cuisine_name'),
         'recipe_name':request.form.get('recipe_name'),
         'recipe_author':request.form.get('recipe_author'),
         'description':request.form.get('description'),
@@ -103,10 +105,8 @@ def update_recipe(recipe_id):
         'instruction4':request.form.get('instruction4'),
         'prep_time':request.form.get('prep_time'),
         'cooking_time':request.form.get('cooking_time'),
-        'cuisine':request.form.get('cuisine'),
         'calories':request.form.get('calories'),
         'allergens':request.form.get('allergens'),
-        'gluten_free':request.form.get('gluten_free'),
     })
     return redirect(url_for('get_recipe'))
     

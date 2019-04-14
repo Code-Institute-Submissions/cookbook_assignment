@@ -21,6 +21,26 @@
                     <label>Recipe Category</label>
                 </div>
             </div>
+            
+            <div class="row">
+               <div class="input-field col s12">
+                    <i class="material-icons prefix">poll</i>
+                <select multiple id="cuisine_name" name="cuisine_name">
+                  <option value="" disabled selected>Choose Origin of Cuisine</option>
+                  {% for cuisine in cuisines %}
+                  {% if cuisine.cuisine_name == recipe.cuisine_name %}
+                    <option value="{{recipe.cuisine_name}}" selected>{{recipe.cuisine_name}}</option>
+                  {% else %}
+                    <option value="{{cuisine.cuisine_name}}">{{cuisine.cuisine_name}}</option>
+                  {% endif %}      
+                  {% endfor %}
+                </select>
+                    <label>Cuisine Category</label>
+                </div>
+            </div>
+            
+            
+      
       
       <div class="row">
         <div class="input-field col s12">
@@ -120,13 +140,6 @@
       <div class="row">
         <div class="input-field col s12">
             <i class="material-icons prefix">mode_edit</i>
-          <input id="cuisine" name="cuisine" type="text" class="validate" value="{{recipe.cuisine}}">
-          <label for="icon_prefix">Cuisine Style</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-            <i class="material-icons prefix">mode_edit</i>
           <input id="calories" name="calories" type="text" class="validate" value="{{recipe.calories}}">
           <label for="icon_prefix">Number of Calories</label>
         </div>
@@ -138,20 +151,6 @@
           <label for="icon_prefix">Allergens</label>
         </div>
       </div>
-        
-        <div class="row">
-            <div class="switch">
-               <label>
-                   {% if recipe.gluten_free %}
-                      <input id="gluten_free" name="gluten_free" type="checkbox" value="Yes" checked>
-                   {% else %}      
-                      <input id="gluten_free" name="gluten_free" type="checkbox" value="No">
-                   {% endif %}      
-                    <span class="lever"></span>
-                    Gluten Free
-               </label>
-            </div>
-        </div>
 
         <div class="row">
             <button class="btn waves-effect waves-light" type="submit">Edit Recipe
