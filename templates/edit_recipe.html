@@ -142,7 +142,11 @@
         <div class="row">
             <div class="switch">
                <label>
-                 <input id="gluten_free" name="gluten_free" type="checkbox">
+                   {% if recipe.gluten_free %}
+                      <input id="gluten_free" name="gluten_free" type="checkbox" value="Yes" checked>
+                   {% else %}      
+                      <input id="gluten_free" name="gluten_free" type="checkbox" value="No">
+                   {% endif %}      
                     <span class="lever"></span>
                     Gluten Free
                </label>
