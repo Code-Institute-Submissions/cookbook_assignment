@@ -53,6 +53,7 @@ def login():
 
     if client:
         session['username'] = request.form['username']
+        session['password'] = request.form['password']
         return redirect(url_for('homepage'))
     else:    
         return  "not a valid username"
