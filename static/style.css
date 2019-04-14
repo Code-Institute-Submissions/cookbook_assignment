@@ -24,11 +24,22 @@ h4{
     font-family: 'Pacifico', sans-serif;
 }
 
+h1{
+    font-family: 'Pacifico', sans-serif;
+    color: #581845;
+}
+
+.subheading{
+    font-family: 'Pacifico', sans-serif;
+    color: #C70039;
+}
+
 h2{
     font-family: 'Pacifico', sans-serif;
     color: red;
 }
 
-.page-footer{
-    margin-top: -20px;
+.title{
+    font-family: 'Pacifico', sans-serif;
+    color: #581845;
 }

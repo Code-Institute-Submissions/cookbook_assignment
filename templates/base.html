@@ -13,6 +13,7 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           {% if session['username'] %}
             <li><a href="{{url_for('homepage')}}"><span class="element">{{session['username']}}</span></a></li>
+            <li><a href="{{ url_for('new_cuisine') }}"><span class="element">Add Cuisine!</span></a></li>
             <li><a href="{{url_for('add_recipe')}}"><span class="element">Add A Recipe!</span></a></li>
             <li><a href="{{url_for('get_recipe')}}"><span class="element">Recipes</span></a></li>
             <li><a href="{{url_for('logout')}}"><span class="element">Log Out</span></a></li>

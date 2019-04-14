@@ -120,6 +120,17 @@ def view_recipe(recipe_id):
     the_recipe =  mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     return render_template('view_recipe.html', recipe=the_recipe, categories=all_categories)   
+    
+@app.route('/new_cuisine')
+def new_cuisine():
+    return render_template('add_cuisine.html')    
+    
+@app.route('/add_cuisine', methods=['POST'])    
+def add_cuisine():
+    cuisines = mongo.db.origin_of_cuisine
+    cuisine_doc = {'cuisine_name': request.form['cuisine_name']}
+    cuisines.insert_one(cuisine_doc)
+    return redirect(url_for('homepage'))
 
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
