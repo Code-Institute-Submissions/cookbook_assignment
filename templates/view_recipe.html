@@ -8,35 +8,37 @@
                  
 
             <div class="row">
-              <strong><p>Category:</p></strong>  
-                  {{ recipe.category_name }}
+              <center><strong class="desc-recipe"><p>Category</p></strong>  
+                  <p class="desc-data">{{ recipe.category_name }}</p></center>
                   <hr>
-              <strong><p>Style of Cuisine:</p></strong>    
-                   {{recipe.cuisine_name}}
-              <strong><p>Preparation Time:</p></strong> 
-                  {{ recipe.prep_time }}
+              <center><strong class="desc-recipe"><p>Style of Cuisine</p></strong>    
+                   <p class="desc-data">{{recipe.cuisine_name}}</p></center>
+                  <hr>  
+              <center><strong class="desc-recipe"><p>Preparation Time:</p></strong> 
+                  <p class="desc-data">{{ recipe.prep_time }}</p></center>
                   <hr>
-              <strong><p>Cooking Time:</p></strong> 
-              {{ recipe.cooking_time }}
+              <center><strong class="desc-recipe"><p>Cooking Time:</p></strong> 
+              <p class="desc-data">{{ recipe.cooking_time }}</p></center>
                   <hr>
-              <strong><p>Number of Calories:</p></strong>       
-               {{recipe.calories}}  
-              <strong><p>Allergens:</p></strong>  
-               {{recipe.allergens}}
+              <center><strong class="desc-recipe"><p>Number of Calories:</p></strong>       
+               <p class="desc-data">{{recipe.calories}}</p><center>
                   <hr>
-               <strong>Ingredients:</strong>  
-                  <p>{{recipe.ingredient1}}</p>
-                  <p>{{recipe.ingredient2}}</p>
-                  <p>{{recipe.ingredient3}}</p>
-                  <p>{{recipe.ingredient4}}</p>
-                  <p>{{recipe.ingredient5}}</p>
+              <center><strong class="desc-recipe"><p>Allergens:</p></strong>  
+               <p class="desc-data">{{recipe.allergens}}</p><center>
+                  <hr>
+               <strong class="desc-recipe">Ingredients:</strong>  
+                  <p class="desc-data">{{recipe.ingredient1}}</p>
+                  <p class="desc-data">{{recipe.ingredient2}}</p>
+                  <p class="desc-data">{{recipe.ingredient3}}</p>
+                  <p class="desc-data">{{recipe.ingredient4}}</p>
+                  <p class="desc-data">{{recipe.ingredient5}}</p>
                   <hr>      
-                <strong>Instructions:</strong>  
-                   <p>{{recipe.instruction1}}</p>
-                   <p>{{recipe.instruction2}}</p>
-                   <p>{{recipe.instruction3}}</p>
-                   <p>{{recipe.instruction4}}</p>
-                   <p>{{recipe.instruction5}}</p>
+                <strong class="desc-recipe">Instructions:</strong>  
+                   <p class="desc-data">{{recipe.instruction1}}</p>
+                   <p class="desc-data">{{recipe.instruction2}}</p>
+                   <p class="desc-data">{{recipe.instruction3}}</p>
+                   <p class="desc-data">{{recipe.instruction4}}</p>
+                   <p class="desc-data">{{recipe.instruction5}}</p>
                    <hr>
             </div>
         </div>    

@@ -1,6 +1,8 @@
 {% extends 'base.html' %}{% block content %}
-
-<div class="row">
+<div class="container">
+    <div class="row">
+        <h2>Add the Origin of Your Cuisine!</h2>
+        <h4>Please Fill Out All Necessary Fields Below:</h4>
     <form action="{{url_for('add_cuisine')}}" method="POST" class="col s12">
         <div class="row">
             <div class="input-field col s12">
@@ -16,5 +18,7 @@
         </div>
     </form>
 </div>
+</div>
+
 
 {% endblock %}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico:100,200,300,400,500,600,700|Nanum Myeongjo: 100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Pacifico:100,200,300,400,500,600,700|Nanum Myeongjo: 100,200,300,400,500,600,700|Domine: 100,200,300,400,500,600,700');
 
 .brand-logo{
     font-family: 'Pacifico', sans-serif;
@@ -22,7 +22,21 @@ h4{
 
 .desc{
     font-family: 'Pacifico', sans-serif;
+    font-weight: 400;
 }
+
+.desc-recipe{
+    font-family: 'Pacifico', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.desc-data{
+    font-family: 'Domine', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
 
 h1{
     font-family: 'Pacifico', sans-serif;
@@ -42,4 +56,8 @@ h2{
 .title{
     font-family: 'Pacifico', sans-serif;
     color: #581845;
+}
+
+.detail{
+     font-family: 'Domine', sans-serif;
 }

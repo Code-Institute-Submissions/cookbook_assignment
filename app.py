@@ -30,6 +30,11 @@ def lunch():
 def dinner():
     return render_template('dinner.html',
     recipes = mongo.db.recipes.find())     
+    
+@app.route('/irish')    
+def irish():
+    return render_template('irish.html',
+    recipes = mongo.db.recipes.find())    
 
 @app.route('/user')
 def user():
