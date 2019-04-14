@@ -53,10 +53,9 @@ def login():
 
     if client:
         session['username'] = request.form['username']
-        session['password'] = request.form['password']
         return redirect(url_for('homepage'))
     else:    
-        return  "not a valid username"
+        return "not a valid username"
 
 @app.route('/logout', methods=['GET','POST'])
 def logout():
@@ -65,7 +64,8 @@ def logout():
 
 @app.route('/add_recipe')
 def add_recipe():
-    return render_template("add_recipe.html", categories=mongo.db.categories.find())
+    return render_template("add_recipe.html", 
+    categories=mongo.db.categories.find(), cuisines=mongo.db.origin_of_cuisine.find())
 
 @app.route('/insert_recipe', methods=["POST"])
 def insert_recipe():

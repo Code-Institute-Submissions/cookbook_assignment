@@ -16,6 +16,20 @@
                     <label>Recipe Category</label>
                 </div>
             </div>
+            
+            <div class="row">
+               <div class="input-field col s12">
+                    <i class="material-icons prefix">poll</i>
+                <select multiple id="cuisine_name" name="cuisine_name">
+                  <option value="" disabled selected>Choose Origin of Cuisine</option>
+                  {% for cuisine in cuisines %}
+                      <option value="{{cuisine.cuisine_name}}">{{cuisine.cuisine_name}}</option>
+                  {% endfor %}
+                </select>
+                    <label>Cuisine Category</label>
+                </div>
+            </div>
+            
       
       <div class="row">
         <div class="input-field col s12">
@@ -112,13 +126,6 @@
         </div>
       </div>
       <h4>Please Give Details of Your Recipe Below:</h4>
-      <div class="row">
-        <div class="input-field col s12">
-            <i class="material-icons prefix">mode_edit</i>
-          <input id="cuisine" name="cuisine" type="text" class="validate" required="" aria-required="true">
-          <label for="icon_prefix">Cuisine Style</label>
-        </div>
-      </div>
       <div class="row">
         <div class="input-field col s12">
             <i class="material-icons prefix">mode_edit</i>

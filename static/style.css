@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico:100,200,300,400,500,600,700|Nanum Myeongjo: 100,200,300,400,500,600,700');
+
+.brand-logo{
+    font-family: 'Pacifico', sans-serif;
+}
+a{
+    font-family: 'Nanum Myeongjo', sans-serif;
+    font-weight: 600;
+}
+
+li{
+    font-family: 'Nanum Myeongjo', sans-serif;
+}
+
+.desc{
+    font-family: 'Pacifico', sans-serif;
+}
+
+h2{
+    font-family: 'Pacifico', sans-serif;
+    color: red;
+}
