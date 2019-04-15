@@ -19,7 +19,7 @@ def homepage():
 @app.route('/breakfast')    
 def breakfast():
     return render_template('breakfast.html',
-    recipes = mongo.db.recipes.find())
+    recipes = mongo.db.recipes.find().sort("recipe_name"))
 
 @app.route('/lunch')    
 def lunch():
@@ -160,6 +160,7 @@ def update_recipe(recipe_id):
         'prep_time':request.form.get('prep_time'),
         'cooking_time':request.form.get('cooking_time'),
         'calories':request.form.get('calories'),
+        'servings':request.form.get('servings'),
         'allergens':request.form.get('allergens'),
     })
     return redirect(url_for('get_recipe'))

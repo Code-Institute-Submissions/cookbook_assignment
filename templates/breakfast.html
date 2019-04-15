@@ -3,13 +3,15 @@
 <div class="container">
     <div class="row">
     <div class="col 12 m12">
+        <h2 class="heading"><center>Breakfast Menu!</center></h2>
+        <h5 class="subheading"><center>Check Out Our Great Break Recipes!</center></h5>
         {% for recipe in recipes %}
         {% if recipe.category_name == "Breakfast" %}
       <div class="card light-blue darken-4">
     <ul>
         <li>
         <div class="card-content white-text">
-          <span class="card-title"><strong class="recipe-name">{{recipe.recipe_name}}</strong> by <strong class="recipe-name">{{recipe.recipe_author}}</strong></span> 
+          <span class="card-title"><strong class="recipe-name">{{recipe.recipe_name}}</strong> by <strong class="recipe-name">{{recipe.first_name}} {{recipe.surname}}</strong></span> 
           <hr>
           <p class="detail">{{recipe.description}}</p>
           <hr>
