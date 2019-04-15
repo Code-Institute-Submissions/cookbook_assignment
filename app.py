@@ -106,7 +106,12 @@ def insert_recipe():
 
 @app.route('/get_recipe')
 def get_recipe():
-    return render_template("recipes.html", recipes=mongo.db.recipes.find())
+    return render_template("recipes.html", recipes=mongo.db.recipes.find().sort('recipe_name'))
+    
+@app.route('/get_author')
+def get_author():
+    return render_template("author.html", recipes=mongo.db.recipes.find().sort("surname"))
+    
     
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
@@ -124,7 +129,8 @@ def update_recipe(recipe_id):
         'category_name':request.form.get('category_name'),
         'cuisine_name':request.form.get('cuisine_name'),
         'recipe_name':request.form.get('recipe_name'),
-        'recipe_author':request.form.get('recipe_author'),
+        'first_name':request.form.get('first_name'),
+        'surname':request.form.get('surname'),
         'difficulty_level':request.form.get('difficulty_level'),
         'description':request.form.get('description'),
         'ingredient1':request.form.get('ingredient1'),
@@ -179,7 +185,6 @@ def add_cuisine():
     cuisine_doc = {'cuisine_name': request.form['cuisine_name']}
     cuisines.insert_one(cuisine_doc)
     return redirect(url_for('homepage'))
-    
     
 if __name__ == '__main__':
     app.secret_key = 'mysecret'

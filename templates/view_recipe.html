@@ -3,7 +3,7 @@
 
         <div class="container">
             <div class="row">
-                 <h2 class="title"><center>{{ recipe.recipe_name }} by {{ recipe.recipe_author }}</center></h2>
+                 <h2 class="title"><center>{{ recipe.recipe_name }} by {{recipe.first_name}} {{recipe.surname}}</center></h2>
             </div>
                  
 
@@ -11,7 +11,7 @@
               <center><strong class="desc-recipe"><p>Difficulty Level</p></strong>  
                   <p class="desc-data">{{ recipe.difficulty_level }}</p></center>
                   <hr>
-              <center><strong class="desc-recipe"><p>Category</p></strong>  
+              <center><strong class="desc-recipe"><p>Meal Category</p></strong>  
                   <p class="desc-data">{{ recipe.category_name }}</p></center>
                   <hr>
               <center><strong class="desc-recipe"><p>Style of Cuisine</p></strong>    
