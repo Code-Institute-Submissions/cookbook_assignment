@@ -35,6 +35,17 @@ def dinner():
 def irish():
     return render_template('irish.html',
     recipes = mongo.db.recipes.find())    
+    
+@app.route('/french')    
+def french():
+    return render_template('french.html',
+    recipes = mongo.db.recipes.find())     
+    
+@app.route('/italian')    
+def italian():
+    return render_template('italian.html',
+    recipes = mongo.db.recipes.find())        
+    
 
 @app.route('/user')
 def user():
@@ -70,7 +81,7 @@ def logout():
 @app.route('/add_recipe')
 def add_recipe():
     return render_template("add_recipe.html", 
-    categories=mongo.db.categories.find(), cuisines=mongo.db.origin_of_cuisine.find())
+    categories=mongo.db.categories.find(), cuisines=mongo.db.origin_of_cuisine.find(), difficulty=mongo.db.difficulty.find())
 
 @app.route('/insert_recipe', methods=["POST"])
 def insert_recipe():
@@ -136,7 +147,8 @@ def add_cuisine():
     cuisine_doc = {'cuisine_name': request.form['cuisine_name']}
     cuisines.insert_one(cuisine_doc)
     return redirect(url_for('homepage'))
-
+    
+    
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
     app.run(host=os.environ.get('IP'),

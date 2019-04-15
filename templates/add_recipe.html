@@ -28,10 +28,23 @@
                   {% endfor %}
                 </select>
                     <label>Cuisine Category</label>
+                     <li><a href="{{ url_for('new_cuisine') }}"><span class="element">Can't Find the Right Cuisine Style? Click Here to Add One!</span></a></li>
                 </div>
             </div>
             
-            <li><a href="{{ url_for('new_cuisine') }}"><span class="element">Can't Find the Right Cuisine Style? Click Here to Add One!</span></a></li>
+            
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">poll</i>
+                <select multiple id="difficulty_level" name="difficulty_level">
+                  <option value="" disabled selected>Choose Difficulty</option>
+                  {% for diff in difficulty %}
+                      <option value="{{diff.difficulty_level}}">{{diff.difficulty_level}}</option>
+                  {% endfor %}
+                </select>
+                    <label>Difficulty Category</label>
+                </div>
+            </div>
             
       <div class="row">
         <div class="input-field col s12">
