@@ -39,6 +39,23 @@
                 </div>
             </div>
             
+            <div class="row">
+               <div class="input-field col s12">
+                    <i class="material-icons prefix">poll</i>
+                <select multiple id="difficulty_level" name="difficulty_level">
+                  <option value="" disabled selected>Choose Difficulty</option>
+                  {% for diff in difficulty %}
+                  {% if diff.difficulty_level == recipe.difficulty_level %}
+                    <option value="{{recipe.difficulty_level}}" selected>{{recipe.difficulty_level}}</option>
+                  {% else %}
+                    <option value="{{diff.difficulty_level}}">{{diff.difficulty_level}}</option>
+                  {% endif %}      
+                  {% endfor %}
+                </select>
+                    <label>Difficulty Category</label>
+                </div>
+            </div>
+            
             
       
       

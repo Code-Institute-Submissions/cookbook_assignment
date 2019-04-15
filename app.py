@@ -99,7 +99,8 @@ def edit_recipe(recipe_id):
     the_recipe = mongo.db.recipes.find_one({"_id":ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     all_cuisine = mongo.db.origin_of_cuisine.find()
-    return render_template('edit_recipe.html', recipe=the_recipe, categories=all_categories, cuisines=all_cuisine)
+    all_difficulties = mongo.db.difficulty.find()
+    return render_template('edit_recipe.html', recipe=the_recipe, categories=all_categories, cuisines=all_cuisine, difficulty=all_difficulties)
     
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 def update_recipe(recipe_id):
@@ -110,6 +111,7 @@ def update_recipe(recipe_id):
         'cuisine_name':request.form.get('cuisine_name'),
         'recipe_name':request.form.get('recipe_name'),
         'recipe_author':request.form.get('recipe_author'),
+        'difficulty_level':request.form.get('difficulty_level'),
         'description':request.form.get('description'),
         'ingredient1':request.form.get('ingredient1'),
         'ingredient2':request.form.get('ingredient2'),
