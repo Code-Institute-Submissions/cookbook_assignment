@@ -17,19 +17,22 @@
               <center><strong class="desc-recipe"><p>Style of Cuisine</p></strong>    
                    <p class="desc-data">{{recipe.cuisine_name}}</p></center>
                   <hr>  
-              <center><strong class="desc-recipe"><p>Preparation Time:</p></strong> 
+              <center><strong class="desc-recipe"><p>Preparation Time</p></strong> 
                   <p class="desc-data">{{ recipe.prep_time }}</p></center>
                   <hr>
-              <center><strong class="desc-recipe"><p>Cooking Time:</p></strong> 
+              <center><strong class="desc-recipe"><p>Cooking Time</p></strong> 
               <p class="desc-data">{{ recipe.cooking_time }}</p></center>
                   <hr>
-              <center><strong class="desc-recipe"><p>Number of Calories:</p></strong>       
+              <center><strong class="desc-recipe"><p>Servings</p></strong> 
+              <p class="desc-data">{{ recipe.servings }}</p></center>
+                  <hr>      
+              <center><strong class="desc-recipe"><p>Number of Calories</p></strong>       
                <p class="desc-data">{{recipe.calories}}</p><center>
                   <hr>
-              <center><strong class="desc-recipe"><p>Allergens:</p></strong>  
+              <center><strong class="desc-recipe"><p>Allergens</p></strong>  
                <p class="desc-data">{{recipe.allergens}}</p><center>
                   <hr>
-               <strong class="desc-recipe">Ingredients:</strong>  
+               <strong class="desc-recipe">Ingredients</strong>  
                   <p class="desc-data">{{recipe.ingredient1}}</p>
                   <p class="desc-data">{{recipe.ingredient2}}</p>
                   <p class="desc-data">{{recipe.ingredient3}}</p>
@@ -55,7 +58,16 @@
                
                    <hr>
             </div>
-        </div>    
+        </div>   
+        
+<footer class="page-footer indigo lighten-3">
+  <div class="footer-copyright">
+      <div class="container">
+          © 2019 Copyright <strong class="brand-logo">HotPot's</strong>
+      </div>
+  </div>
+</footer>
+    
             
 
 {% endblock %}

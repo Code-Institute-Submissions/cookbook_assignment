@@ -4,7 +4,13 @@
     <div class="row">
     <div class="col 12 m12">
         <h2 class="heading"><center>Recipe Menu!</center></h2>
-        <h5 class="subheading"><center>Our Recipes are Organised Alphabetically by <a href="{{url_for('get_recipe')}}"><span class="element">Recipe Name</span></a> & <a href="{{url_for('get_author')}}"><span class="element">Author Name</span></a></center></h5>
+        <hr>
+        <br>
+        <h5 class="subheading"><center>Organised Alphabetically by Both</h5>
+        <h5><center><a href="{{url_for('get_recipe')}}"><span class="element">Recipe Name</span></a> & <a href="{{url_for('get_author')}}"><span class="element">Author Name</span></a></center></h5>
+       <br>
+        <h5 class="subheading"><center>Choose a Difficulty!</center></h5>
+        <h5><center><a href="{{url_for('begin')}}"><span class="element">Easy</span></a>, <a href="{{url_for('inter')}}"><span class="element">Intermediate</span></a> & <a href="{{url_for('expert')}}"><span class="element">Expert</span></a></center></h5>
         {% for recipe in recipes %}
       <div class="card light-blue darken-4">
     <ul>
@@ -39,6 +45,15 @@
     </div>
   </div>
 </div>
+
+<footer class="page-footer indigo lighten-3">
+  <div class="footer-copyright">
+      <div class="container">
+          © 2019 Copyright <strong class="brand-logo">HotPot's</strong>
+      </div>
+  </div>
+</footer>
+
 
        
 

@@ -3,6 +3,8 @@
 <div class="container">
     <div class="row">
     <div class="col 12 m12">
+        <h2 class="heading"><center>Dinner Menu!</center></h2>
+        <h5 class="subheading"><center>Check Out Our Great Dinner Recipes!</center></h5>
         {% for recipe in recipes %}
         {% if recipe.category_name == "Dinner" %}
       <div class="card light-blue darken-4">
@@ -18,6 +20,7 @@
           <p class="detail"><strong>Difficulty: </strong>{{recipe.difficulty_level}}</p>
           <p class="detail"><strong>Preparation Time: </strong>{{recipe.prep_time}}</p> 
           <p class="detail"><strong>Cooking Time: </strong>{{recipe.cooking_time}}</p>
+          <p class="detail"><strong>Servings: </strong>{{recipe.servings}}</p>
           <div class="card-action">
         
            <div class="col-s3">
@@ -35,5 +38,14 @@
     </div>
   </div>
 </div>
+
+<footer class="page-footer indigo lighten-3">
+  <div class="footer-copyright">
+      <div class="container">
+          © 2019 Copyright <strong class="brand-logo">HotPot's</strong>
+      </div>
+  </div>
+</footer>
+
 
 {% endblock%}

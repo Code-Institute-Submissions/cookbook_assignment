@@ -24,42 +24,42 @@ def breakfast():
 @app.route('/lunch')    
 def lunch():
     return render_template('lunch.html',
-    recipes = mongo.db.recipes.find())  
+    recipes = mongo.db.recipes.find().sort("recipe_name"))  
     
 @app.route('/dinner')    
 def dinner():
     return render_template('dinner.html',
-    recipes = mongo.db.recipes.find())     
+    recipes = mongo.db.recipes.find().sort("recipe_name"))     
     
 @app.route('/irish')    
 def irish():
     return render_template('irish.html',
-    recipes = mongo.db.recipes.find())    
+    recipes = mongo.db.recipes.find().sort("recipe_name"))    
     
 @app.route('/french')    
 def french():
     return render_template('french.html',
-    recipes = mongo.db.recipes.find())     
+    recipes = mongo.db.recipes.find().sort("recipe_name"))     
     
 @app.route('/italian')    
 def italian():
     return render_template('italian.html',
-    recipes = mongo.db.recipes.find())        
+    recipes = mongo.db.recipes.find().sort("recipe_name"))        
     
 @app.route('/begin')
 def begin():
     return render_template('beginner.html',
-    recipes = mongo.db.recipes.find())
+    recipes = mongo.db.recipes.find().sort("recipe_name"))
     
 @app.route('/inter')
 def inter():
      return render_template('inter.html',
-    recipes = mongo.db.recipes.find())
+    recipes = mongo.db.recipes.find().sort("recipe_name"))
     
 @app.route('/expert')
 def expert():
     return render_template('expert.html',
-    recipes = mongo.db.recipes.find())    
+    recipes = mongo.db.recipes.find().sort("recipe_name"))    
 
 @app.route('/user')
 def user():
