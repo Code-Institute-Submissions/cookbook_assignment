@@ -68,33 +68,33 @@ The following is a list of links for all recipes used (or, in some cases, partly
 
 (Please note that in some cases, recipe authors did not appear on some of the selected official recipe pages used. In lieu of these missing names, I used pseudonyms. However, full credit is given below for every recipe used and its source.)
 
-* Basic Frittata: Source: IncredibleEgg.org. Link provided [here]( https://www.incredibleegg.org/recipe/simple-frittata/).
-* Fantastic Fish Pie – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/fish-recipes/fantastic-fish-pie/). 
-* Hash Browns – Source: BonAppétite.com. Link provided [here]( https://www.bonappetit.com/recipe/bas-best-hash-browns).
-* Irish Stew – Source: BordBia.ie. Link provided [here]( https://www.bordbia.ie/consumer/recipes/lamb/pages/irishstew.aspx).
-* Martin Freeman’s Eggs Royale – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/egg-recipes/martin-freeman-s-eggs-royale/).
-* Skillet Garlic Butter Herb Steak & Potatoes – Source: TheRecipeCritic.com. Link provided [here]( https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/).
-* Original Italian Pizza – Source: KitchenStories.com. Link provided [here]( https://www.kitchenstories.com/en/recipes/original-italian-pizza).
-* Ratatouille – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/vegetables-recipes/classic-ratatouille/).
-* Scrambled Eggs with Bacon – Source: BrooklynFarmGirl.com. Link provided [here]( https://brooklynfarmgirl.com/scrambled-eggs-with-bacon/).
-* Scrumptious cheese and veggies on toast – Source: AllRecipes.co.uk. Link provided [here]( http://allrecipes.co.uk/recipe/75/scrumptious-cheese-and-veggies-on-toast.aspx).
-* Spaghetti Bolognese – Source: Lidl-Recipes.ie. Link provided [here]( https://www.lidl-recipes.ie/Recipes/Scrummy-Spaghetti-Bolognese).
-* Traditional Pancakes – Source: Odlums.ie. Link provided [here]( https://www.odlums.ie/recipes/traditional-pancakes/).
-* Vegetable Soup – Source: SafeFood.eu. Link provided [here]( https://www.safefood.eu/Recipes/Lunch/Homemade-vegetable-soup.aspx)
+* **Basic Frittata** - Source: IncredibleEgg.org. Link provided [here]( https://www.incredibleegg.org/recipe/simple-frittata/).
+* **Fantastic Fish Pie** – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/fish-recipes/fantastic-fish-pie/). 
+* **Hash Browns** – Source: BonAppétite.com. Link provided [here]( https://www.bonappetit.com/recipe/bas-best-hash-browns).
+* **Irish Stew** – Source: BordBia.ie. Link provided [here]( https://www.bordbia.ie/consumer/recipes/lamb/pages/irishstew.aspx).
+* **Martin Freeman’s Eggs Royale** – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/egg-recipes/martin-freeman-s-eggs-royale/).
+* **Skillet Garlic Butter Herb Steak & Potatoes** – Source: TheRecipeCritic.com. Link provided [here]( https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/).
+* **Original Italian Pizza** – Source: KitchenStories.com. Link provided [here]( https://www.kitchenstories.com/en/recipes/original-italian-pizza).
+* **Ratatouille** – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/vegetables-recipes/classic-ratatouille/).
+* **Scrambled Eggs with Bacon** – Source: BrooklynFarmGirl.com. Link provided [here]( https://brooklynfarmgirl.com/scrambled-eggs-with-bacon/).
+* **Scrumptious Cheese and Veggies on Toast** – Source: AllRecipes.co.uk. Link provided [here]( http://allrecipes.co.uk/recipe/75/scrumptious-cheese-and-veggies-on-toast.aspx).
+* **Spaghetti Bolognese** – Source: Lidl-Recipes.ie. Link provided [here]( https://www.lidl-recipes.ie/Recipes/Scrummy-Spaghetti-Bolognese).
+* **Traditional Pancakes** – Source: Odlums.ie. Link provided [here]( https://www.odlums.ie/recipes/traditional-pancakes/).
+* **Vegetable Soup** – Source: SafeFood.eu. Link provided [here]( https://www.safefood.eu/Recipes/Lunch/Homemade-vegetable-soup.aspx)
 
 **Media**
-T
-he following is a list of links for all images used on this project:
 
-* Breakfast Image - Source: TheWorkTop.com. Link provided [here]( https://www.theworktop.com/breakfast-brunch-recipes/healthy-breakfast-bowl-beans-sweet-potato/).
-* Lunch Image – Source: LazyCatKitchen.com. Link provided [here]( https://www.lazycatkitchen.com/mexican-lunch-bowl-spicy-crumb/).
-* Dinner Image – Source: DinnerAtTheZoo.com. Link provided [here]( https://www.dinneratthezoo.com/firecracker-chicken/).
-* Irish Cuisine Image – Source: DonalSkehan.com. Link provided [here]( http://www.donalskehan.com/journal/my-top-traditional-irish-recipes/).
-* French Cuisine Image – Source: Pinterest.com. Link provided [here]( https://www.pinterest.ie/pin/455145106086315521/).
-* Italian Cuisine Image – Source: PlaysWellWithButter.com. Link provided [here]( https://playswellwithbutter.com/2016/09/19/pasta-bolognese-with-bucatini/).
-* Easy Recipes Image – Source: MomOnTimeOut. Link provided [here]( https://www.momontimeout.com/easy-chicken-stir-fry-recipe/)
-* Intermediate Recipes Image – Source: TheMediterraneanDish.com. Link provided [here]( https://www.themediterraneandish.com/easy-ratatouille-recipe/)
-* Expert recipes Image – Source: ChefDeHome. Link provided [here]( https://www.chefdehome.com/recipes/561/ratatouille)
+The following is a list of links for all images used on this project:
+
+* **Breakfast Image** - Source: TheWorkTop.com. Link provided [here]( https://www.theworktop.com/breakfast-brunch-recipes/healthy-breakfast-bowl-beans-sweet-potato/).
+* **Lunch Image** – Source: LazyCatKitchen.com. Link provided [here]( https://www.lazycatkitchen.com/mexican-lunch-bowl-spicy-crumb/).
+* **Dinner Image** – Source: DinnerAtTheZoo.com. Link provided [here]( https://www.dinneratthezoo.com/firecracker-chicken/).
+* **Irish Cuisine Image** – Source: DonalSkehan.com. Link provided [here]( http://www.donalskehan.com/journal/my-top-traditional-irish-recipes/).
+* **French Cuisine Image** – Source: Pinterest.com. Link provided [here]( https://www.pinterest.ie/pin/455145106086315521/).
+* **Italian Cuisine Image** – Source: PlaysWellWithButter.com. Link provided [here]( https://playswellwithbutter.com/2016/09/19/pasta-bolognese-with-bucatini/).
+* **Easy Recipes Image** – Source: MomOnTimeOut. Link provided [here]( https://www.momontimeout.com/easy-chicken-stir-fry-recipe/)
+* **Intermediate Recipes Image** – Source: TheMediterraneanDish.com. Link provided [here]( https://www.themediterraneandish.com/easy-ratatouille-recipe/)
+* **Expert recipes Image** – Source: ChefDeHome. Link provided [here]( https://www.chefdehome.com/recipes/561/ratatouille)
 
 **Acknowledgements**
 
