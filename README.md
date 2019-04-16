@@ -18,11 +18,11 @@ In this section, I will briefly describe each user available feature which this 
 * **Navigation bar** – Allows users to navigate between web pages on the site using marked buttons.
 * **Home Page Cards** – Another way for users to navigate the site, but each card includes an image and each link is specific to a different variety of recipes they can view. The varieties include Recipes by Meal Type, Recipes by Cuisine and Recipes by Ability.
 * **Sign Up!** – A page which prompts the user for their email address, username and password to register them for the site.
-* **Log in** – A page which prompts the user for their username. Log in are both required for users to avail of certain features on the site.
+* **Log in** – A page which prompts the user for their username. Log in is required for users to avail of certain features on the site.
 * **Log In Failure** - A courtesy page which will notify a user of their log in failure. Includes a hyperlink back to the log in page. 
-* **Username icon** – A neat little icon of the user’s username which will appear on the right hand side of the navbar to welcome the user when they successfully log in. It is will also bring the user back to the home page when clicked.
+* **Username icon** – A neat little icon of the user’s username which will appear on the right hand side of the navbar to welcome the user when they successfully log in. It will also bring the user back to the home page when clicked.
 * **Recipe Menu** – A list of every recipe available to view on the site. The list is organised alphabetically by Recipe Name and Author’s Surname.
-* **Recipe Cards** – These cards appear on all Recipe Menus. They are coloured blue and they give a brief synopsis of the recipe that include Title, Author, Description, Meal Category, Cuisine and Difficulty. Depending on whether or not a user is logged in, the choices for each card can differ from simply viewing the recipe or, if logged in, the ability to edit and delete that recipe.
+* **Recipe Cards** – These cards appear on all Recipe Menus. They are coloured blue and they give a brief synopsis of the recipe that include Title, Author, Description, Meal Category, Cuisine, Difficulty and Serving Portion. Depending on whether or not a user is logged in, the choices for each card can differ from simply viewing the recipe or, if logged in, the ability to edit and delete that recipe.
 * **View Recipe** – One of the Recipe Card options which allows the user to view a webpage with the full details of the Recipe Card they clicked including Ingredients and Instructions.
 * **Add A Recipe!** – A navigation button which will bring a logged in user to a form for adding a recipe to the site. The form Requires each field to be filled out and is validated at certain marks to make sure the recipe satisfies all requirements necessary to be added to the site.
 * **Edit a Recipe** – A feature of the Recipe Card. Edit a Recipe is similar to the Add a Recipe! feature, except this form allows the user to improve an existing recipe on the site. Every detail of the recipe will appear in the prompt and the user can make adjustments where necessary.
@@ -96,19 +96,26 @@ The following is a list of links for all recipes used (or, in some cases, partly
 
 (Please note that in some cases, recipe authors did not appear on some of the selected official recipe pages used. In lieu of these missing names, I used pseudonyms. However, full credit is given below for every recipe used and its source.)
 
+* **Baked Lobster Tail** - Source: Tasty.co. Link Provided [Here](https://tasty.co/recipe/baked-lobster-tails).
+* **Bang Bang Chicken Salad** -  Source: SafeFood.eu. Link provided [here](https://www.safefood.eu/Recipes/Lunch/Bang-bang-chicken-salad.aspx).
 * **Basic Frittata** - Source: IncredibleEgg.org. Link provided [here]( https://www.incredibleegg.org/recipe/simple-frittata/).
+* **Beef Wellington For Two** - Source: Tasty.co. Link provided [here](https://tasty.co/recipe/beef-wellington-for-two)
 * **Fantastic Fish Pie** – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/fish-recipes/fantastic-fish-pie/). 
+* **French Onion Soup** - Source: SimplyRecipes.com. Link provided [here](https://www.simplyrecipes.com/recipes/french_onion_soup/).
 * **Hash Browns** – Source: BonAppétite.com. Link provided [here]( https://www.bonappetit.com/recipe/bas-best-hash-browns).
 * **Irish Stew** – Source: BordBia.ie. Link provided [here]( https://www.bordbia.ie/consumer/recipes/lamb/pages/irishstew.aspx).
 * **Martin Freeman’s Eggs Royale** – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/egg-recipes/martin-freeman-s-eggs-royale/).
-* **Skillet Garlic Butter Herb Steak & Potatoes** – Source: TheRecipeCritic.com. Link provided [here]( https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/).
-* **Original Italian Pizza** – Source: KitchenStories.com. Link provided [here]( https://www.kitchenstories.com/en/recipes/original-italian-pizza).
+* **Original Italian Pizza** – Source: KitchenStories.com. Link provided [here]( https://www.kitchenstories.com/en/recipes/original-italian-pizza). 
 * **Ratatouille** – Source: JamieOliver.com. Link provided [here]( https://www.jamieoliver.com/recipes/vegetables-recipes/classic-ratatouille/).
 * **Scrambled Eggs with Bacon** – Source: BrooklynFarmGirl.com. Link provided [here]( https://brooklynfarmgirl.com/scrambled-eggs-with-bacon/).
 * **Scrumptious Cheese and Veggies on Toast** – Source: AllRecipes.co.uk. Link provided [here]( http://allrecipes.co.uk/recipe/75/scrumptious-cheese-and-veggies-on-toast.aspx).
+* **Skillet Garlic Butter Herb Steak & Potatoes** – Source: TheRecipeCritic.com. Link provided [here]( https://therecipecritic.com/skillet-garlic-butter-herb-steak-and-potatoes/).
 * **Spaghetti Bolognese** – Source: Lidl-Recipes.ie. Link provided [here]( https://www.lidl-recipes.ie/Recipes/Scrummy-Spaghetti-Bolognese).
+* **Steak-Stuffed Garlic Bread** - Source: Tasty.co. Link provided [here](https://tasty.co/recipe/steak-stuffed-garlic-bread).
 * **Traditional Pancakes** – Source: Odlums.ie. Link provided [here]( https://www.odlums.ie/recipes/traditional-pancakes/).
+* **Turkey Bagel with Avacado** - Source: SafeFood.eu. Link provided [here](https://www.safefood.eu/Recipes/Lunch/Bagel-with-turkey-and-avocado.aspx).
 * **Vegetable Soup** – Source: SafeFood.eu. Link provided [here]( https://www.safefood.eu/Recipes/Lunch/Homemade-vegetable-soup.aspx).
+* **Welsh Rarebit** - Source: SafeFood.eu. Link provided [here](https://www.safefood.eu/Recipes/Lunch/Welsh-rarebit.aspx). 
 
 **Media**
 
@@ -127,6 +134,15 @@ The following is a list of links for all images used on this project:
 * **Sign Up Image** - Source: FoodRevolution.org. Link provided [here](https://foodrevolution.org/blog/healthy-holiday-food-swaps/).
 * **Log In Failure Image** - Source: ExperienceDays.co.uk. Link provided [here](https://www.experiencedays.co.uk/vegan-cooking-class-london).
 * **Recipe Menu Image** - Source: VisitAalborg.com. Link provided [here](https://www.visitaalborg.com/ln-int/aalborg-street-food-lighthouse-gdk1090004).
+* **Breakfast Menu Image** - Source: SeriousEats.com. Link provided [here](https://www.seriouseats.com/recipes/2015/07/mexican-fried-chicken-waffles-recipe.html).
+* **Lunch Menu Image** - Source: SeriousEats.com. Link provided [here](https://www.seriouseats.com/recipes/2016/07/cuban-sandwich-recipe.html).
+* **Dinner Menu Image** - Source: AmazingClubs.com. Link provided [here](https://www.amazingclubs.com/dinner.html).
+* **Irish Cusisine Menu Image** - Source: SpiceIslands.com. Link provided [here](https://spiceislands.com/articles/cuisine-on-tour-ireland).
+* **French Cuisine Menu Image** - Source: JapanTimes.co.jp. Link provided [here](https://www.japantimes.co.jp/life/2017/11/16/travel/luxurious-french-cuisine-heart-osaka/#.XLZRXuhKg2w).
+* **Italian Cuisine Menu Image** - Source: UtdFoodies.site. Link provided [here](https://utdfoodies.site/italian/).
+* **Easy Recipes Menu Image** - Source: BBC.com. Link provided [here](https://www.bbc.com/food/recipes/easy_spanish_chicken_09987).
+* **Intermediate Recipes Menu Image** - Source: SaltAndWind.com. Link provided [here](http://saltandwind.com/recipes/skill/intermediate?page=7).
+* **Expert Recipes Menu Image** - Source: Realfood.Tesco.com. Link provided [here](https://realfood.tesco.com/recipes/grilled-lobster-with-garlic-and-herb-butter.html).
 
 **Acknowledgements**
 

@@ -3,7 +3,13 @@
 <div class="container">
     <div class="row">
     <div class="col 12 m12">
-        <h2 class="heading"><center>Intermediate!</center></h2>
+         <h2 class="heading"><center>Intermediate Recipes!</center></h2>
+         <hr>
+         <center><img class="login-pic" src="{{url_for('static', filename='images/skewer.jpg')}}" height=420></center>
+        <hr>
+        <br>
+         <h5 class="subheading"><center>Fancy a Challenge? Why Not Give One of These a Try!</center></h5>
+       <br>
         {% for recipe in recipes %}
         {% if recipe.difficulty_level == "Intermediate" %}
       <div class="card light-blue darken-4">
@@ -17,8 +23,6 @@
           <p class="detail"><strong>Meal Category: </strong>{{recipe.category_name}}</p>
           <p class="detail"><strong>Cuisine: </strong>{{recipe.cuisine_name}}</p>
           <p class="detail"><strong>Difficulty: </strong>{{recipe.difficulty_level}}</p>
-          <p class="detail"><strong>Preparation Time: </strong>{{recipe.prep_time}}</p> 
-          <p class="detail"><strong>Cooking Time: </strong>{{recipe.cooking_time}}</p>
           <p class="detail"><strong>Servings: </strong>{{recipe.servings}}</p>
           <div class="card-action">
         
