@@ -85,12 +85,16 @@ def login():
         session['username'] = request.form['username']
         return redirect(url_for('homepage'))
     else:    
-        return "not a valid username"
+        return redirect(url_for('incorrect'))
 
 @app.route('/logout', methods=['GET','POST'])
 def logout():
     session.pop('username')
     return redirect(url_for('homepage'))
+    
+@app.route('/incorrect')
+def incorrect():
+    return render_template('incorrect.html')
 
 @app.route('/add_recipe')
 def add_recipe():

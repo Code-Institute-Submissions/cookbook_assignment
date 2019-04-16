@@ -10,6 +10,8 @@ app.config["MONGO_URI"] = "mongodb://admin:7hayfield@ds135776.mlab.com:35776/coo
 
 mongo = PyMongo(app)
 
-def get_recipe(recipe):
+def get_recipe():
     recipe=mongo.db.recipes.find()
-    return recipe
+    return "recipe_name"
+    
+print(get_recipe)    

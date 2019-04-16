@@ -19,6 +19,7 @@ In this section, I will briefly describe each user available feature which this 
 * **Home Page Cards** – Another way for users to navigate the site, but each card includes an image and each link is specific to a different variety of recipes they can view. The varieties include Recipes by Meal Type, Recipes by Cuisine and Recipes by Ability.
 * **Sign Up!** – A page which prompts the user for their email address, username and password to register them for the site.
 * **Log in** – A page which prompts the user for their username. Log in are both required for users to avail of certain features on the site.
+* **Log In Failure** - A courtesy page which will notify a user of their log in failure. Includes a hyperlink back to the log in page. 
 * **Username icon** – A neat little icon of the user’s username which will appear on the right hand side of the navbar to welcome the user when they successfully log in. It is will also bring the user back to the home page when clicked.
 * **Recipe Menu** – A list of every recipe available to view on the site. The list is organised alphabetically by Recipe Name and Author’s Surname.
 * **Recipe Cards** – These cards appear on all Recipe Menus. They are coloured blue and they give a brief synopsis of the recipe that include Title, Author, Description, Meal Category, Cuisine and Difficulty. Depending on whether or not a user is logged in, the choices for each card can differ from simply viewing the recipe or, if logged in, the ability to edit and delete that recipe.
@@ -107,7 +108,7 @@ The following is a list of links for all recipes used (or, in some cases, partly
 * **Scrumptious Cheese and Veggies on Toast** – Source: AllRecipes.co.uk. Link provided [here]( http://allrecipes.co.uk/recipe/75/scrumptious-cheese-and-veggies-on-toast.aspx).
 * **Spaghetti Bolognese** – Source: Lidl-Recipes.ie. Link provided [here]( https://www.lidl-recipes.ie/Recipes/Scrummy-Spaghetti-Bolognese).
 * **Traditional Pancakes** – Source: Odlums.ie. Link provided [here]( https://www.odlums.ie/recipes/traditional-pancakes/).
-* **Vegetable Soup** – Source: SafeFood.eu. Link provided [here]( https://www.safefood.eu/Recipes/Lunch/Homemade-vegetable-soup.aspx)
+* **Vegetable Soup** – Source: SafeFood.eu. Link provided [here]( https://www.safefood.eu/Recipes/Lunch/Homemade-vegetable-soup.aspx).
 
 **Media**
 
@@ -119,9 +120,13 @@ The following is a list of links for all images used on this project:
 * **Irish Cuisine Image** – Source: DonalSkehan.com. Link provided [here]( http://www.donalskehan.com/journal/my-top-traditional-irish-recipes/).
 * **French Cuisine Image** – Source: Pinterest.com. Link provided [here]( https://www.pinterest.ie/pin/455145106086315521/).
 * **Italian Cuisine Image** – Source: PlaysWellWithButter.com. Link provided [here]( https://playswellwithbutter.com/2016/09/19/pasta-bolognese-with-bucatini/).
-* **Easy Recipes Image** – Source: MomOnTimeOut. Link provided [here]( https://www.momontimeout.com/easy-chicken-stir-fry-recipe/)
-* **Intermediate Recipes Image** – Source: TheMediterraneanDish.com. Link provided [here]( https://www.themediterraneandish.com/easy-ratatouille-recipe/)
-* **Expert recipes Image** – Source: ChefDeHome. Link provided [here]( https://www.chefdehome.com/recipes/561/ratatouille)
+* **Easy Recipes Image** – Source: MomOnTimeOut. Link provided [here]( https://www.momontimeout.com/easy-chicken-stir-fry-recipe/).
+* **Intermediate Recipes Image** – Source: TheMediterraneanDish.com. Link provided [here]( https://www.themediterraneandish.com/easy-ratatouille-recipe/).
+* **Expert Recipes Image** – Source: ChefDeHome. Link provided [here]( https://www.chefdehome.com/recipes/561/ratatouille).
+* **Log In Image** - Source: FoodRevolution.org.Link provided[here](https://foodrevolution.org/blog/how-to-eat-to-prevent-diabetes/).
+* **Sign Up Image** - Source: FoodRevolution.org. Link provided [here](https://foodrevolution.org/blog/healthy-holiday-food-swaps/).
+* **Log In Failure Image** - Source: ExperienceDays.co.uk. Link provided [here](https://www.experiencedays.co.uk/vegan-cooking-class-london).
+* **Recipe Menu Image** - Source: VisitAalborg.com. Link provided [here](https://www.visitaalborg.com/ln-int/aalborg-street-food-lighthouse-gdk1090004).
 
 **Acknowledgements**
 
@@ -129,8 +134,8 @@ The following is a list of links for all images used on this project:
 * Niel McEwan(tutor) – For guidance support and help during the parts of this projects I found tricky to get through.
 * Pretty Printed (Youtube Channel) - Credit for instructional video for building login functionality which I followed for my own implementation. Link for this video [here](https://www.youtube.com/watch?v=vVx1737auSE).
 * Full credit for form validation jQuery used in this project goes to code I found on CodePen from a user named Ian. Link to the code [here]( https://codepen.io/zzzian/pen/LZbrOP).
-* A very useful tutorial on how to deploy the project using GitHub Pages.Click here for the video.
-* A special thanks to the lecturers and coordinators at Code Institute for their tutorials and instruction through the User-Centric Frontend Development module. Their website can be found here
+* A very useful tutorial on how to deploy the project using GitHub Pages.Click [here](https://www.youtube.com/watch?v=TUJekd0reVQ) for the video.
+* A special thanks to the lecturers and coordinators at Code Institute for their tutorials and instruction through the User-Centric Frontend Development module. Their website can be found [here](https://codeinstitute.net/).
 * Lastly, to my parents, Seamus and Susan, for their constant support and help throughout the prep and creation of this Milestone project.
 
 

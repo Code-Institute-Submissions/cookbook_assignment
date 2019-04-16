@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+
+
+<div class="container">
+    <div class="row">
+       
+       <center><img class="login-pic" src="{{url_for('static', filename='images/cook.jpg')}}" height=420 width=100%></center>
+       
+      <center>
+        <h1>We're Sorry, but That Is Not A Valid Username.</h1> 
+        <a href="{{url_for('user')}}"><h1 class="subheading">Click Here To Try Again.</h1></a>
+      </center>
+    </div>
+</div>
+
+<footer class="page-footer indigo lighten-3">
+  <div class="footer-copyright">
+      <div class="container">
+          © 2019 Copyright <strong class="brand-logo">HotPot's</strong>
+      </div>
+  </div>
+</footer>
+
+{% endblock %}
