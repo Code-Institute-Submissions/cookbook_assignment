@@ -8,6 +8,33 @@ HotPot’s is an online cookbook dedicated to allowing users to display and shar
 Through a series of colorful and easy-to-navigate webpages, the user can assess and decide which recipe they want to make. Most importantly, HotPot’s is user inclusive. Whether the user wishes to interact and add a recipe, or simply browse and view what’s available from other members, there’s something for anyone looking to make their meal great!
 
 
+Features
+---
+
+In this section, I will briefly describe each user available feature which this project has to offer.
+
+**Existing Features**
+
+* **Navigation bar** – Allows users to navigate between web pages on the site using marked buttons.
+* **Home Page Cards** – Another way for users to navigate the site, but each card includes an image and each link is specific to a different variety of recipes they can view. The varieties include Recipes by Meal Type, Recipes by Cuisine and Recipes by Ability.
+* **Sign Up!** – A page which prompts the user for their email address, username and password to register them for the site.
+* **Log in** – A page which prompts the user for their username. Log in are both required for users to avail of certain features on the site.
+* **Username icon** – A neat little icon of the user’s username which will appear on the right hand side of the navbar to welcome the user when they successfully log in. It is will also bring the user back to the home page when clicked.
+* **Recipe Menu** – A list of every recipe available to view on the site. The list is organised alphabetically by Recipe Name and Author’s Surname.
+* **Recipe Cards** – These cards appear on all Recipe Menus. They are coloured blue and they give a brief synopsis of the recipe that include Title, Author, Description, Meal Category, Cuisine and Difficulty. Depending on whether or not a user is logged in, the choices for each card can differ from simply viewing the recipe or, if logged in, the ability to edit and delete that recipe.
+* **View Recipe** – One of the Recipe Card options which allows the user to view a webpage with the full details of the Recipe Card they clicked including Ingredients and Instructions.
+* **Add A Recipe!** – A navigation button which will bring a logged in user to a form for adding a recipe to the site. The form Requires each field to be filled out and is validated at certain marks to make sure the recipe satisfies all requirements necessary to be added to the site.
+* **Edit a Recipe** – A feature of the Recipe Card. Edit a Recipe is similar to the Add a Recipe! feature, except this form allows the user to improve an existing recipe on the site. Every detail of the recipe will appear in the prompt and the user can make adjustments where necessary.
+* **Delete Recipe** – A feature of the Recipe Card. Delete a recipe allows a user to permanently delete a recipe from the database.
+
+**Features Left to Implement**
+* I hope to implement a feature which will allow users to upload their own images to display alongside their recipes. I believe it will make the user experience more personal and rewarding to share images of what they have cooked alongside recipes.
+* I also hope to give the users the opportunity to upvote recipes and have those votes stored on the MongoDB. As of writing this, I haven’t found the solution to properly coding this function, but I hope to make it part of the site soon.
+* I would also like to implement a more secure authentication system which uses password and this feature will also be rectified in the future.
+
+
+
+
 Technologies Used
 ---
 
