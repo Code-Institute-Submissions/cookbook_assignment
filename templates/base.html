@@ -38,10 +38,15 @@
                     <center><li><a href="{{url_for('logout')}}"><span class="element">Log Out</span></a></li></center>
                    <hr>
                    {% else %}
-                   <a href="{{url_for('homepage')}}" class="brand-logo"  style="margin-left:10px">HotPot's</a>
-                   <li><a href="{{url_for('get_recipe')}}"><span class="element">Recipes Menu</span></a></li>
-                   <li><a href="{{url_for('user')}}"><span class="element">Log In</span></a></li>
-                   <li><a href="{{url_for('register')}}"><span class="element">Sign Up!</span></a></li>
+                   <hr>
+                   <center><li><a href="{{url_for('homepage')}}"><span class="element">HotPot's</span></a></li></center>
+                   <hr>
+                   <center><li><a href="{{url_for('get_recipe')}}"><span class="element">Recipes Menu</span></a></li></center>
+                   <hr>
+                   <center><li><a href="{{url_for('user')}}"><span class="element">Log In</span></a></li></center>
+                   <hr>
+                   <center><li><a href="{{url_for('register')}}"><span class="element">Sign Up!</span></a></li></center>
+                   <hr>
                    {% endif %}
                     
                 </ul>

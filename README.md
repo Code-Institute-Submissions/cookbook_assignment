@@ -7,6 +7,44 @@ HotPot’s is an online cookbook dedicated to allowing users to display and shar
 
 Through a series of colorful and easy-to-navigate webpages, the user can assess and decide which recipe they want to make. Most importantly, HotPot’s is user inclusive. Whether the user wishes to interact and add a recipe, or simply browse and view what’s available from other members, there’s something for everyone looking to make their meal great!
 
+UX
+---
+HotPot’s was created as an opportunity to connect the culinary arts with the resourcefulness of the web. It’s mainly intended for any user looking to find and share recipes with and from people all over the world. By using various criteria to measure and group certain recipes together, the site presents a wide variety of cuisines aimed at a wide variety of users from beginner to expert with different culinary skills and interests. HotPot’s is very much a learning resource for the promotion, education and encouragement of users to take risks and venture into the cooking world whether experienced or not. 
+
+Whether a user is looking for a specific recipe or unsure where to start, the **Home Page** immediately presents numerous options for what’s available on the site. The Home Page presents the categorization of recipes by Meal Type, Cuisine Style and Cooking Ability. By condensing these choices into groups, the user can better inform their decision of where to start their journey without intimidation or frustration. For example, a user who is also a beginner and interested in Italian cooking may choose to click "Easy Recipes" or, alternatively, can see what’s available in the “Italian” section of cuisine. By contrast, a long-time chef looking for something challenging may try their hand at something from the “Expert” section, or try a new cuisine such as “French” cooking. The Home Page presents these groups of choices to entice and encourage any user to see the possibilities of what’s available.
+
+Once a user decides which category they want to try and have clicked the link at the bottom of the card, the user will be brought to a new menu with a library of every recipe relevant to that group presented alphabetically for their consideration. Every menu on the site presents the user with a number of  different blue recipe cards that include the title and author of the recipe, a brief description of that recipe, and a few small details such as cuisine style and serving size of the recipe. Each card also includes a **View Recipe** button to view the entire recipe. If a user is logged in, they will also be presented with an Edit and Delete option for every recipe along with the View.
+
+Once the user has chosen their recipe and clicked the **View Recipe** link, they will be presented with the full recipe information including instructions and ingredients to follow along with as they cook their desired recipe. The recipes are presented in a very easy to follow format using larger font and clear, straight-forward information.
+
+To share a recipe with the site, the user must first use the **Sign Up!** button to register with HotPot’s. Sign Up requires a Username, Email Address and Password.  The user can then Log In with their username. While logged in, their username will welcome them on every page of the site’s navigation bar and will also act as a Home Page button should the user get lost. 
+
+If a user wishes to add a recipe to the site, the user must click the **Add a Recipe!** Button which takes them to a structured form which will prompt them for all necessary recipe components before their recipe is published to the site. Criteria for adding a recipe includes correct ingredients, cooking instructions, preparation and cooking times as well as any allergens, serving size and calorie count. Once these criteria are satisfied, the user’s recipe will then be published to the site’s main Recipes Menu, which includes every recipe the site has to offer, as well as being grouped with relevant other menus on the site through the criteria provided.
+
+If a user wishes to find a recipe alphabetically by either recipe name or author’s name, the **Recipes Menu** as described above will provide them with filtered libraries to satisfy this need.
+
+For users who feel their recipe can be improved or wish to make changes to the information they provided, HotPot’s also provides an **Edit Recipe** option which is linked with every recipe card that is created. Once clicked, the user will be brought to a form similar to the one used for Add a Recipe! However, the input prompt will this time include all information previously provided for the recipe’s creation for the user to edit. Once the necessary changes are made and the user is happy, they may submit their changes and the recipe’s new detail will appear accordingly.
+
+Users unhappy with recipes on the site can also delete them using the **Delete Recipe** link also provided on every recipe card created on the site. Every delete is permanent and the recipe will not be retrieved if the option is clicked.
+
+You can find mockups of how this project was planned and envisioned to look below and also in my GitHub under the **mockups** folder.
+
+**Home Page**
+
+<img src="mockups/Home-mockup.jpeg" alt="drawing" width="200"/>
+
+**Recipes Menu**
+
+<img src="mockups/recipes-menu-mockup.jpeg" alt="drawing" width="200"/>
+
+**Add A Recipe!**
+
+<img src="mockups/add-recipe-mockup.jpeg" alt="drawing" width="200"/>
+
+**View Recipe**
+
+<img src="mockups/recipe-detail-mockup.jpeg" alt="drawing" width="200"/>
+
 
 Features
 ---
