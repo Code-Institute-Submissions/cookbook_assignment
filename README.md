@@ -215,10 +215,10 @@ For all tests performed for this project, please refer to the test.py file in Gi
 For manual testing, I checked the user functionality by using the different features of the site and making sure they worked as expected.  The Add a Recipe! form has been tested numerous times for validation and to make sure the data displays where appropriate and that it stores correctly in the MongoDB database. My process for testing form submission went as follows:
 
 1.**Add A Recipe! Form**:
-   1. Go to the Add A Recipe! page by clicking on the link in the navigation bar.
-   2. Try to submit the form without providing any information. You will see the first field you left blank will alert you that it must be filled in.
-   3. If you continue to leave input field empty, the validation warning will keep triggering until every necessary field is filled in. Please note: the only fields not validated are the category selectors as well as Ingredients and Steps numbers 5-12 which may be left empty if you so choose.
-   4. Once all necessary fields and categories are filled in, you will be able to submit the recipe form.
+   I. Go to the Add A Recipe! page by clicking on the link in the navigation bar.
+   II. Try to submit the form without providing any information. You will see the first field you left blank will alert you that it must be filled in.
+   III. If you continue to leave input field empty, the validation warning will keep triggering until every necessary field is filled in. Please note: the only fields not validated are the category selectors as well as Ingredients and Steps numbers 5-12 which may be left empty if you so choose.
+   IV. Once all necessary fields and categories are filled in, you will be able to submit the recipe form.
 
 The Edit Recipe feature was also tested to ensure that data updates were noted and changed accordingly when users update their recipes. This was tested by changing words or values and then checking that those words and values were changed where appropriate.
 
