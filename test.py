@@ -178,7 +178,7 @@ def french(recipes):
         return 2
     
 def test_is_in_french(collection, item):
-    collection = [20] + [18]
+    collection = [20] + [-18]
     for item in collection:
         assert 2 in [2], "{0} contains {1}".format(collection, item)
         
