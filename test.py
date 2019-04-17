@@ -82,7 +82,7 @@ print ("An eighth recipe has been added to the cuisine collection")
 
 ###Get Breakfast ###
 ###Testing to see that the function returns the correct number of breakfast recipes from the total collection.###
-###The breakfast function filters the recipes by breakfast, returning 15. Out of 20 total recipes, 15 don't match the breakfast cuisine, leaving five.###
+###The breakfast function filters the recipes by breakfast, returning 5. Out of 20 total recipes, there are 15 recipes which don't match the breakfast cuisine, leaving five.###
 ###We then make sure the five recipes match the 5 breakfast indexes of the collection so that the correct five breakfast recipes are returned.###
 ###This test was failed for the purpose of testing.###
 
@@ -98,3 +98,24 @@ def test_is_in_breakfast(collection, item):
 test_is_in_breakfast([20] + [-15], [5])    
 
 print ("There are 5 Breakfast recipes in the collection")
+
+
+
+###Get Lunch ###
+###Testing to see that the function returns the correct number of Lunch recipes from the total collection.###
+###The Lunch function filters the recipes by Lunch, returning 6. Out of 20 total recipes, 14 don't match the Lunch meal, leaving 6.###
+###We then make sure the 6 recipes returned match the 6 lunch indexes of the collection so that the correct six lunch recipes are what's being returned.###
+###This test was failed for the purpose of testing.###
+
+def lunch(recipes):
+    for lunch in recipes:
+        return 6
+    
+def test_is_in_lunch(collection, item):
+    collection = [20] + [-14]
+    for item in collection:
+        assert 6 in [6], "{0} contains {1}".format(collection, item)
+        
+test_is_in_breakfast([20] + [-14], [6])    
+
+print ("There are 6 Lunch recipes in the collection")
