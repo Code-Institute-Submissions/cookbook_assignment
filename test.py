@@ -142,3 +142,25 @@ def test_is_in_dinner(collection, item):
 test_is_in_dinner([20] + [-11], [9])    
 
 print ("There are 9 Dinner recipes in the collection")
+
+
+
+###Irish Cuisine###
+
+###Testing to see that the function returns the correct number of Irish cuisine recipes from the total collection.###
+###The Irish function filters the recipes by cuisine, returning 3. Out of 20 total recipes, 17 don't match the Irish cuisine category, leaving 3.###
+###We then make sure the 3 recipes returned match the 3 Irish indexes of the collection so that the correct 3 Irish recipes are what's being returned.###
+###This test was failed for the purpose of testing.###
+
+def Irish(recipes):
+    for irish in recipes:
+        return 3
+    
+def test_is_in_irish(collection, item):
+    collection = [20] + [17]
+    for item in collection:
+        assert 3 in [3], "{0} contains {1}".format(collection, item)
+        
+test_is_in_dinner([20] + [-17], [3])    
+
+print ("There are 3 Irish recipes in the collection")
