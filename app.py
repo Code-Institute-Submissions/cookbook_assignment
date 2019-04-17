@@ -10,6 +10,8 @@ app.config["MONGO_URI"] = "mongodb://admin:7hayfield@ds135776.mlab.com:35776/coo
 
 mongo = PyMongo(app)
 
+### Home Page ###
+
 @app.route('/')
 
 @app.route('/homepage')
@@ -60,6 +62,8 @@ def inter():
 def expert():
     return render_template('expert.html',
     recipes = mongo.db.recipes.find().sort("recipe_name"))    
+    
+###Log In/Register###    
 
 @app.route('/user')
 def user():
@@ -95,6 +99,8 @@ def logout():
 @app.route('/incorrect')
 def incorrect():
     return render_template('incorrect.html')
+    
+###Recipes###    
 
 @app.route('/add_recipe')
 def add_recipe():
@@ -179,6 +185,8 @@ def view_recipe(recipe_id):
     the_recipe =  mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     return render_template('view_recipe.html', recipe=the_recipe, categories=all_categories)   
+    
+###Cuisine###    
     
 @app.route('/new_cuisine')
 def new_cuisine():

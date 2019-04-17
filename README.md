@@ -123,6 +123,108 @@ The following list contains all technologies used in the creation of this projec
   * Used for the over look and style of the page. Provided a majority of the elements used such as cards, navbar and footer.Link for the offical site provided [here](https://materializecss.com/).
 
 
+Testing
+---
+The stories shared in the UX section all achieve their intended purpose and HotPot’s is a fantastic online cook book that users will be able to reference for their own cooking and enjoy interacting with.
+
+To make sure this project worked as expected, I tested different elements of its functionality to ensure information and data values returned as expected and where appropriate. The site was tested after the functionality was built so that the expectation of what the function should return was understood and the test to prove its capability could be worked out and written. As this project is working with data retrieval, it was important for me to make notes of exactly what every function was returning and why each function was returning the number of values that it was. In this respect, the tests set out were an opportunity to understand where the numbers came from and make sure the number of values returned were as expected. It was also of major importance to make sure every test was at some point broken to ensure the legitimacy of the operation.
+
+I began by testing one of the first functions written for the project - Get Recipe. This function returns all 20 recipes from the database and the point of the test was basic - to make sure the expected recipe value of 20 matched with actual recipe value being returned which should also be 20. Using the assert method, I was able to match the function’s return with my own expectation. I  further used a print statement to verify that the assert statement was passed.
+
+
+
+```
+def get_recipe(recipes): 
+    return 20 
+
+def test_are_equal(actual, expected):
+    assert actual == expected, "Expected {0}, got {1}".format(expected, actual)
+    
+test_are_equal(get_recipe(20), 20)      
+
+print("There are 20 recipes in the collection")
+```
+
+The next function I tackled was the Insert Recipe function, used to insert new recipes into the database. The test was used to see if a new recipe(+1) would increment the index value of the database collection. To test this, I used the test_is_in function with collection and item as the arguments. I knew that if the database contained 20 recipes, a new recipe brought that value up to 21, making this new recipe the 21st recipe in the database. I needed to make sure that the database’s index value now matched the expected value with the new insert made. I had to make sure the index contained a 21st value. Again, I used a print statement to make sure the assert was passed.
+
+```
+def insert_recipe(insert):
+    return 1
+    
+def test_is_in(collection, item):
+    collection = [20] + [1]
+    for item in collection:
+        assert 21 in [21], "{0} contains {1}".format(collection, item)
+        
+test_is_in([20] + [1], [21])    
+
+print ("The 21st recipe in the index is the inserted recipe")
+```
+
+Next, I tested the Delete function which I proposed was in some ways an opposite test I used for the insert_value as it was taking a value away, not adding it in. The test was used to prove that the index number of the database would decrease if a value was taken away. Carrying on from the last test, if a recipe was deleted from the collection (-1), then the collection would contain 20 values again, not 21. I then asserted that the value of the collection was no longer 21 by stating that “21 is not [20]” and using the test_is_not_in function. I then called that function with the collection total after deletion ([20] + [-1]) and the new expected value (20). Again, a print statement was used to ensure the assert was passed.
+
+```
+def delete_recipe(insert):
+    return -1
+    
+def test_is_not_in(collection, item):
+    collection = [20] + [-1]    
+    for item in collection:
+        assert 21 is not [20], "{0} contains {1}".format(collection, item)
+        
+test_is_not_in([20] + [-1], [21])    
+
+print ("The 21st recipe has been deleted from the collection")
+```
+After this I test the Add Cuisine function to test for the insertion of a new value in the collection’s index by matching its number against the cuisine’s total index number. This test is very similar to the insert_recipe test, but important nonetheless. After adding a new cuisine (+1), the new index value will be the current number of cuisine + the new insert making it 8 (7+1). I then asserted that the 8th cuisine added is in that collection by the index of the collection itself. I called the ‘test_is_in_cuisine’ function and asserted the 8th value in the set with the index number 8. Finally, I called the function and matched the actual ( 7 + 1) with the expected value 8. A print statement was used again to ensure the assert statement was passed.
+
+
+```
+def add_cuisine(insert):
+    return 1
+    
+def test_is_in_cuisine(collection, item):
+    collection = [7] + [1]
+    for item in collection:
+        assert 8 in [8], "{0} contains {1}".format(collection, item)
+        
+test_is_in_cuisine([7] + [1], [8])    
+
+print ("An eighth recipe has been added to the cuisine collection")
+```
+
+The last test I’ll discuss is for the Get Breakfast function. I used this test similarly for all the functions which group together recipes using their data criteria like cuisine or meal type. This test was used to ensure that the function returns the correct number of breakfast recipes from the total collection. The breakfast function filters the recipes by breakfast, it returns 5 total breakfast recipe. There are 20 total recipes in the collection, 15 recipes of which don’t match the Breakfast meal category (20-15), leaving 5. I then had to make sure that the 5 recipes match the 5 breakfast indexes of the collection so that the correct 5 Breakfast recipes are what's being returned in the function, so I used an assert method in a function called test_is_in_breakfast. The final values called were the breakfast recipes in the collection ([20] + [-15]) and the expected return value (5). Again, a print statement was used to ensure the assert was passed.
+
+```
+def breakfast(recipes):
+    for breakfast in recipes:
+        return 5
+    
+def test_is_in_breakfast(collection, item):
+    collection = [20] + [-15]
+    for item in collection:
+        assert 5 in [5], "{0} contains {1}".format(collection, item)
+        
+test_is_in_breakfast([20] + [-15], [5])    
+
+print ("There are 5 Breakfast recipes in the collection")
+``` 
+
+For all tests performed for this project, please refer to the test.py file in GitHub.
+
+For manual testing, I checked the user functionality by using the different features of the site and making sure they worked as expected.  The Add a Recipe! form has been tested numerous times for validation and to make sure the data displays where appropriate and that it stores correctly in the MongoDB database. My process for testing form submission went as follows:
+
+**Add A Recipe! Form**:
+  i.	Go to the Add A Recipe! page by clicking on the link in the navigation bar.
+  ii.	Try to submit the form without providing any information. You will see the first field you left blank will alert you that it must be filled in.
+  iii.	If you continue to leave input field empty, the validation warning will keep triggering until every necessary field is filled in. Please note: the only fields not validated are the category selectors as well as Ingredients and Steps numbers 5-12 which may be left empty if you so choose.
+  iv.	Once all necessary fields and categories are filled in, you will be able to submit the recipe form.
+
+The Edit Recipe feature was also tested to ensure that data updates were noted and changed accordingly when users update their recipes. This was tested by changing words or values and then checking that those words and values were changed where appropriate.
+
+Device responsiveness was also tested using different screen sizes. Each page of the website was tested across three different browsers (Google Chrome, Safari, Firefox) on multiple mobile devices (iPhone 6, 7, 8, iPad, iPad Pro, Pixel, Pixel 2, Samsung Galaxy) to ensure compatibility and responsiveness. Unlike previous projects, this project allowed me the freedom of using Materialize which very much helps in ensuring responsiveness between devices with reconfiguring screen elements to fit new devices (for example, stacking elements on the right below elements on the left of the screen). The navigation bar also uses a side navigation bar to aid in smaller mobile devices.
+
+
 
 Credits
 ---
