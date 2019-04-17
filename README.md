@@ -7,6 +7,11 @@ HotPot’s is an online cookbook dedicated to allowing users to display and shar
 
 Through a series of colorful and easy-to-navigate webpages, the user can assess and decide which recipe they want to make. Most importantly, HotPot’s is user inclusive. Whether the user wishes to interact and add a recipe, or simply browse and view what’s available from other members, there’s something for everyone looking to make their meal great!
 
+Demo
+---
+A live demo of this project can be found [here]( http://hotpots.herokuapp.com/homepage)
+
+
 UX
 ---
 HotPot’s was created as an opportunity to connect the culinary arts with the resourcefulness of the web. It’s mainly intended for any user looking to find and share recipes with and from people all over the world. By using various criteria to measure and group certain recipes together, the site presents a wide variety of cuisines aimed at a wide variety of users from beginner to expert with different culinary skills and interests. HotPot’s is very much a learning resource for the promotion, education and encouragement of users to take risks and venture into the cooking world whether experienced or not. 
