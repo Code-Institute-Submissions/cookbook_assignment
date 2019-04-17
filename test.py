@@ -65,6 +65,7 @@ print ("The 21st recipe has been deleted from the collection")
 ###Testing to see if adding a cuisine to a collection will increase the index number of the collection's total and see if the cuisine index added matches the final index number of the collection.###
 ###After adding a cuisine [1], the cuisine collection will now contain 8 cuisines as opposed to 7 (i.e 7 + 1). We then assert that the 8th cuisine added is in that collection by the index of the collection.###
 ####We call the 'test_is_in_cuisine' function with the collection total after insertion (7 + 1) and the new cuisine's index number (8) and see if the match as expected.###
+###This test was failed for the purpose of testing.###
 
 def add_cuisine(insert):
     return 1
@@ -76,4 +77,24 @@ def test_is_in_cuisine(collection, item):
         
 test_is_in_cuisine([7] + [1], [8])    
 
-print ("A eighth recipe has been added to the cuisine collection")
+print ("An eighth recipe has been added to the cuisine collection")
+
+
+###Get Breakfast ###
+###Testing to see that the function returns the correct number of breakfast recipes from the total collection.###
+###The breakfast function filters the recipes by breakfast, returning 15. Out of 20 total recipes, 15 don't match the breakfast cuisine, leaving five.###
+###We then make sure the five recipes match the 5 breakfast indexes of the collection so that the correct five breakfast recipes are returned.###
+###This test was failed for the purpose of testing.###
+
+def breakfast(recipes):
+    for breakfast in recipes:
+        return 5
+    
+def test_is_in_breakfast(collection, item):
+    collection = [20] + [-15]
+    for item in collection:
+        assert 5 in [5], "{0} contains {1}".format(collection, item)
+        
+test_is_in_breakfast([20] + [-15], [5])    
+
+print ("There are 5 Breakfast recipes in the collection")

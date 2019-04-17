@@ -38,13 +38,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     
-    <script>
-    
-    //For category dropdown functionality//
-    
+     <script type="text/javascript">
         $(document).ready(function() {
             $('.collapsible').collapsible();
-            $('.sidenav').sidenav();
+            $('select').material_select();
+        });
         
         
     //Plugin used for form validation to make sure all areas are filled in//    
@@ -60,9 +58,10 @@
           width: 0
         });
       });
+      
+    </script>
         
 
-    </script>
     
 </body>
 </html>
