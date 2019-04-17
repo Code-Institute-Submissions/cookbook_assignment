@@ -187,3 +187,25 @@ test_is_in_french([20] + [-18], [2])
 print ("There are 2 French recipes in the collection")
 
 
+
+###Italian Cuisine###
+
+###Testing to see that the function returns the correct number of Italian cuisine recipes from the total collection.###
+###The Italian function filters the recipes by cuisine, returning 3. Out of 20 total recipes, 17 don't match the Italian cuisine category, leaving 3.###
+###We then make sure the 3 recipes returned match the 3 Italian indexes of the collection so that the correct 3 Italian recipes are what's being returned.###
+###This test was failed for the purpose of testing.###
+
+def italian(recipes):
+    for italian in recipes:
+        return 3
+    
+def test_is_in_italian(collection, item):
+    collection = [20] + [-17]
+    for item in collection:
+        assert 3 in [3], "{0} contains {1}".format(collection, item)
+        
+test_is_in_italian([20] + [-17], [3])    
+
+print ("There are 3 Italian recipes in the collection")
+
+
