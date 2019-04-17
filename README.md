@@ -54,6 +54,7 @@ In this section, I will briefly describe each user available feature which this 
 **Existing Features**
 
 * **Navigation bar** – Allows users to navigate between web pages on the site using marked buttons.
+* **Side Navigation bar** - A responsive navigation bar which will offer the same stanard navigation for smaller devices.
 * **Home Page Cards** – Another way for users to navigate the site, but each card includes an image and each link is specific to a different variety of recipes they can view. The varieties include Recipes by Meal Type, Recipes by Cuisine and Recipes by Ability.
 * **Sign Up!** – A page which prompts the user for their email address, username and password to register them for the site.
 * **Log in** – A page which prompts the user for their username. Log in is required for users to avail of certain features on the site.
