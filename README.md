@@ -31,19 +31,19 @@ You can find mockups of how this project was planned and envisioned to look belo
 
 **Home Page**
 
-<img src="mockups/Home-mockup.jpeg" alt="drawing" width="200"/>
+<img src="Mockups/Home-mockup.jpeg" alt="drawing" width="200"/>
 
 **Recipes Menu**
 
-<img src="mockups/recipes-menu-mockup.jpeg" alt="drawing" width="200"/>
+<img src="Mockups/recipes-menu-mockup.jpeg" alt="drawing" width="200"/>
 
 **Add A Recipe!**
 
-<img src="mockups/add-recipe-mockup.jpeg" alt="drawing" width="200"/>
+<img src="Mockups/add-recipe-mockup.jpeg" alt="drawing" width="200"/>
 
 **View Recipe**
 
-<img src="mockups/recipe-detail-mockup.jpeg" alt="drawing" width="200"/>
+<img src="Mockups/recipe-detail-mockup.jpeg" alt="drawing" width="200"/>
 
 
 Features
