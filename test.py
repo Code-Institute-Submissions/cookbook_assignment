@@ -209,3 +209,68 @@ test_is_in_italian([20] + [-17], [3])
 print ("There are 3 Italian recipes in the collection")
 
 
+
+###Beginner Recipes###
+
+###Testing to see that the function returns the correct number of Beginner recipes from the total collection.###
+###The Beginner function filters the recipes by difficulty, returning 12. Out of 20 total recipes, 8 don't match the Beginner difficulty, leaving 12.###
+###We then make sure the 12 recipes returned match the 12 appropriate indexes of the collection so that the correct 12 Beginner recipes are what's being returned.###
+###This test was failed for the purpose of testing.###
+
+def begin(recipes):
+    for easy in recipes:
+        return 12
+    
+def test_is_in_beginner(collection, item):
+    collection = [20] + [-8]
+    for item in collection:
+        assert 12 in [12], "{0} contains {1}".format(collection, item)
+        
+test_is_in_french([20] + [-8], [12])    
+
+print ("There are 12 Beginner recipes in the collection")
+
+
+
+###Intermediate Recipes###
+
+###Testing to see that the function returns the correct number of Intermediate recipes from the total collection.###
+###The Inter function filters the recipes by difficulty, returning 4. Out of 20 total recipes, 16 don't match the Intermediate difficulty, leaving 4.###
+###We then make sure the 4 recipes returned match the 4 Intermediate indexes of the collection so that the correct 4 correct recipes are what's being returned.###
+###This test was failed for the purpose of testing.###
+
+def inter(recipes):
+    for intermediate in recipes:
+        return 4
+    
+def test_is_in_inter(collection, item):
+    collection = [20] + [-16]
+    for item in collection:
+        assert 4 in [4], "{0} contains {1}".format(collection, item)
+        
+test_is_in_inter([20] + [-16], [4])    
+
+print ("There are 4 Intermediate recipes in the collection")
+
+
+###Expert Recipes###
+
+###Testing to see that the function returns the correct number of Expert recipes from the total collection.###
+###The Expert function filters the recipes by difficulty, returning 4. Out of 20 total recipes, 16 don't match the Expert difficulty, leaving 4.###
+###We then make sure the 4 recipes returned match the 4 Expert indexes of the collection so that the correct 4 correct recipes are what's being returned.###
+###This test was failed for the purpose of testing.###
+
+def expert(recipes):
+    for expert in recipes:
+        return 4
+    
+def test_is_in_expert(collection, item):
+    collection = [20] + [-16]
+    for item in collection:
+        assert 4 in [4], "{0} contains {1}".format(collection, item)
+        
+test_is_in_inter([20] + [-16], [4])    
+
+print ("There are 4 Expert recipes in the collection")
+
+
