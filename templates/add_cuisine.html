@@ -1,8 +1,11 @@
 {% extends 'base.html' %}{% block content %}
 <div class="container">
     <div class="row">
-        <h2>Add the Origin of Your Cuisine!</h2>
-        <h4>Please Fill Out All Necessary Fields Below:</h4>
+        <h2 class="heading"><center>Add A Cuisine</center></h2>
+       <br>
+         <center><img class="login-pic" src="{{url_for('static', filename='images/cuisine.jpg')}}" height=420></center>
+       <br>
+        <h4>Please Provide The Origin of Your Chosen Cuisine:</h4>
     <form action="{{url_for('add_cuisine')}}" method="POST" class="col s12">
         <div class="row">
             <div class="input-field col s12">

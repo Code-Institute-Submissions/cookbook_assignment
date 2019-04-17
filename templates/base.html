@@ -26,6 +26,8 @@
     </div>
   </nav>
   
+ 
+  
     {% block content %}
     {% endblock %}
     
@@ -42,8 +44,7 @@
     
         $(document).ready(function() {
             $('.collapsible').collapsible();
-            $('select').material_select();
-        });
+            $('.sidenav').sidenav();
         
         
     //Plugin used for form validation to make sure all areas are filled in//    

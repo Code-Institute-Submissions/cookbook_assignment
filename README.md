@@ -5,7 +5,7 @@ HotPot’s Cook Book
 
 HotPot’s is an online cookbook dedicated to allowing users to display and share their recipes with people from all over the world. The site is category-focused and highlights recipes based on attributes such as cuisine, cooking ability and meal type. The user can structure, create and edit their recipes to their preference and store recipes on the site for other users to view. HotPot’s is an opportunity for users to see the joy of cooking and to understand that making something great can be very simple. After all, anyone can cook!
 
-Through a series of colorful and easy-to-navigate webpages, the user can assess and decide which recipe they want to make. Most importantly, HotPot’s is user inclusive. Whether the user wishes to interact and add a recipe, or simply browse and view what’s available from other members, there’s something for anyone looking to make their meal great!
+Through a series of colorful and easy-to-navigate webpages, the user can assess and decide which recipe they want to make. Most importantly, HotPot’s is user inclusive. Whether the user wishes to interact and add a recipe, or simply browse and view what’s available from other members, there’s something for everyone looking to make their meal great!
 
 
 Features
@@ -143,6 +143,7 @@ The following is a list of links for all images used on this project:
 * **Easy Recipes Menu Image** - Source: BBC.com. Link provided [here](https://www.bbc.com/food/recipes/easy_spanish_chicken_09987).
 * **Intermediate Recipes Menu Image** - Source: SaltAndWind.com. Link provided [here](http://saltandwind.com/recipes/skill/intermediate?page=7).
 * **Expert Recipes Menu Image** - Source: Realfood.Tesco.com. Link provided [here](https://realfood.tesco.com/recipes/grilled-lobster-with-garlic-and-herb-butter.html).
+* **Add A Cuisine Image** - Source: Classic-Collection.co.uk. Link Provided [here](https://www.classic-collection.co.uk/blog/destinations/italy/best-traditional-italian-food/).
 
 **Acknowledgements**
 
