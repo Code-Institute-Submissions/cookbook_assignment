@@ -65,7 +65,7 @@ print ("The 21st recipe has been deleted from the collection")
 ###Add Cuisine###
 
 ###Testing to see if adding a cuisine to a collection will increase the index number of the collection's total and see if the cuisine index added matches the final index number of the collection.###
-###After adding a cuisine [1], the cuisine collection will now contain 8 cuisines as opposed to 7 (i.e 7 + 1). We then assert that the 8th cuisine added is in that collection by the index of the collection.###
+###After adding a cuisine [1], the cuisine collection will now contain 8 cuisines as opposed to 7 (i.e 7 + 1). We then assert that the 8th cuisine added is in that collection by the index of the collection itself.###
 ####We call the 'test_is_in_cuisine' function with the collection total after insertion (7 + 1) and the new cuisine's index number (8) and see if the match as expected.###
 ###This test was failed for the purpose of testing.###
 
