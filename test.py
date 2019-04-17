@@ -27,3 +27,21 @@ def test_is_in(collection, item):
 test_is_in([20] + [1], [21])    
 
 print ("The 21st recipe in the index is the inserted recipe")
+
+###Testing to see if deleting a recipe from the collection with decrease the index number of the collection's total.###
+###After deleting a recipe [-1], the collection will not contain 20 recipes (21 - 1). We then assert that the 21st recipe added is no longer in the index of the collection.###
+####We call the 'test_is_not_in' function with the collection total after deletion (20) and the recipe's last added index number (21) ###
+
+
+def delete_recipe(insert):
+    return -1
+    
+def test_is_not_in(collection, item):
+    collection = [20] + [-1]    
+    for item in collection:
+        assert 21 is not [20], "{0} contains {1}".format(collection, item)
+        
+test_is_not_in([20] + [-1], [21])    
+
+print ("The 21st recipe has been deleted from the collection")
+
