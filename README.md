@@ -71,6 +71,7 @@ In this section, I will briefly describe each user available feature which this 
 * **Add A Recipe!** – A navigation button which will bring a logged in user to a form for adding a recipe to the site. The form Requires each field to be filled out and is validated at certain marks to make sure the recipe satisfies all requirements necessary to be added to the site.
 * **Edit a Recipe** – A feature of the Recipe Card. Edit a Recipe is similar to the Add a Recipe! feature, except this form allows the user to improve an existing recipe on the site. Every detail of the recipe will appear in the prompt and the user can make adjustments where necessary.
 * **Delete Recipe** – A feature of the Recipe Card. Delete a recipe allows a user to permanently delete a recipe from the database.
+* **Add A Cuisine** - Allows users to add a new style of cuisine to the site.
 
 **Features Left to Implement**
 * I hope to implement a feature which will allow users to upload their own images to display alongside their recipes. I believe it will make the user experience more personal and rewarding to share images of what they have cooked alongside recipes.
