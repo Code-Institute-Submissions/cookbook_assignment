@@ -9,7 +9,7 @@ Through a series of colorful and easy-to-navigate webpages, the user can assess 
 
 Demo
 ---
-A live demo of this project can be found [here]( http://hotpots.herokuapp.com/homepage)
+A live demo of this project can be found [here]( http://hotpots.herokuapp.com/homepage).
 
 
 UX
@@ -229,6 +229,15 @@ The Edit Recipe feature was also tested to ensure that data updates were noted a
 
 Device responsiveness was also tested using different screen sizes. Each page of the website was tested across three different browsers (Google Chrome, Safari, Firefox) on multiple mobile devices (iPhone 6, 7, 8, iPad, iPad Pro, Pixel, Pixel 2, Samsung Galaxy) to ensure compatibility and responsiveness. Unlike previous projects, this project allowed me the freedom of using Materialize which very much helps in ensuring responsiveness between devices with reconfiguring screen elements to fit new devices (for example, stacking elements on the right below elements on the left of the screen). The navigation bar also uses a side navigation bar to aid in smaller mobile devices.
 
+
+Deployment
+---
+
+This project was deployed using **Heroku** from the master branch. As of writing this file, there is no difference between the development and deployed version of this project. In order to deploy this project through Heroku, I first has to create the Heroku app on their website. Then, through the terminal, I used `Heroku login ` to connect my Cloud9 environment with Heroku. After entering my credentials I used Heroku apps to check that my HotPot’s app was there. I then used `heroku git:remote -a hotpots ` in order to make the Heroku app a master branch. I then tried to push the project to Heroku using `git push Heroku master ` but I needed a requirements.txt file (which is a list of requirements which Heroku requires before it runs the application) for which Ised this command: `sudo pip3 freeze –local >requirements.txt `, and a Procfile (a file to direct Heroku to the entry point of the application) for which I used this command: ` echo web: python app.py > Procfile` before this would work. I then used `heroku ps:scale web=1` to start the Heroku app.
+
+On I had these settings in place, I went to the Heroku app and configured and set the **IP (0.0.0.0)** and **PORT (5000)**. Once this was finished, I crossed my fingers and clicked the ‘Open App’ button and my project was officially deployed.
+
+To run this code locally, you may clone this repository from the **Clone or Download** button at the top of the page and write `git clone` followed by the cloned URL into an editor of your choosing. To cut ties with GitHub, use git remote rm origin in the terminal. 
 
 
 Credits
